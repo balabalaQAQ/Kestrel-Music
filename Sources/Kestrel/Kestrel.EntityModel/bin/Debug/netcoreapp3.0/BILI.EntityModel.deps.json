@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.0": {
+      "BILI.EntityModel/1.0.0": {
+        "runtime": {
+          "BILI.EntityModel.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BILI.EntityModel/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

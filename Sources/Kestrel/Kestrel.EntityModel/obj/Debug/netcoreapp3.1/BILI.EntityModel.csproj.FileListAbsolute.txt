@@ -1,0 +1,8 @@
+G:\程序\ASP.Net Core\Bilibili\BiliBili\BILI.EntityModel\bin\Debug\netcoreapp3.1\BILI.EntityModel.deps.json
+G:\程序\ASP.Net Core\Bilibili\BiliBili\BILI.EntityModel\bin\Debug\netcoreapp3.1\BILI.EntityModel.dll
+G:\程序\ASP.Net Core\Bilibili\BiliBili\BILI.EntityModel\bin\Debug\netcoreapp3.1\BILI.EntityModel.pdb
+G:\程序\ASP.Net Core\Bilibili\BiliBili\BILI.EntityModel\obj\Debug\netcoreapp3.1\BILI.EntityModel.csprojAssemblyReference.cache
+G:\程序\ASP.Net Core\Bilibili\BiliBili\BILI.EntityModel\obj\Debug\netcoreapp3.1\BILI.EntityModel.AssemblyInfoInputs.cache
+G:\程序\ASP.Net Core\Bilibili\BiliBili\BILI.EntityModel\obj\Debug\netcoreapp3.1\BILI.EntityModel.AssemblyInfo.cs
+G:\程序\ASP.Net Core\Bilibili\BiliBili\BILI.EntityModel\obj\Debug\netcoreapp3.1\BILI.EntityModel.dll
+G:\程序\ASP.Net Core\Bilibili\BiliBili\BILI.EntityModel\obj\Debug\netcoreapp3.1\BILI.EntityModel.pdb
