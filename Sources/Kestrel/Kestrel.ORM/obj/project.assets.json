@@ -289,6 +289,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Diagnostics.DiagnosticSource.dll": {}
         }
+      },
+      "Kestrel.EntityModel/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.0",
+        "compile": {
+          "bin/placeholder/Kestrel.EntityModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Kestrel.EntityModel.dll": {}
+        }
       }
     }
   },
@@ -790,11 +800,18 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Kestrel.EntityModel/1.0.0": {
+      "type": "project",
+      "path": "../Kestrel.EntityModel/Kestrel.EntityModel.csproj",
+      "msbuildProject": "../Kestrel.EntityModel/Kestrel.EntityModel.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 3.1.1"
+      "Kestrel.EntityModel >= 1.0.0",
+      "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 3.1.1",
+      "Microsoft.EntityFrameworkCore >= 3.1.1"
     ]
   },
   "packageFolders": {
@@ -826,7 +843,11 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "G:\\程序\\ASP.Net Core\\Kestrel-Music\\Sources\\Kestrel\\Kestrel.EntityModel\\Kestrel.EntityModel.csproj": {
+              "projectPath": "G:\\程序\\ASP.Net Core\\Kestrel-Music\\Sources\\Kestrel\\Kestrel.EntityModel\\Kestrel.EntityModel.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -839,6 +860,10 @@
       "netcoreapp3.1": {
         "dependencies": {
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[3.1.1, )"
+          },
+          "Microsoft.EntityFrameworkCore": {
             "target": "Package",
             "version": "[3.1.1, )"
           }

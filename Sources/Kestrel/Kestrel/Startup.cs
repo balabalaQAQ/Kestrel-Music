@@ -10,7 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-
+ 
 namespace Kestrel
 {
     public class Startup
@@ -25,6 +25,11 @@ namespace Kestrel
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
+
+            // 添加数据库访问上下文中间件
+            services.AddDbContext<KestrelDbcontext>(opt => opt.UseSqlServer("Server=localhost;Initial Catalog=DKLSystemData; uid=sa;pwd=123456;MultipleActiveResultSets=True"));
+
             services.AddControllers();
         }
 

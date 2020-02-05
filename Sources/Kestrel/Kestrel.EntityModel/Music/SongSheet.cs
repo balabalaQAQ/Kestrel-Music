@@ -7,7 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace Kestrel.EntityModel
+namespace Kestrel.EntityModel.Music
 {
     //歌单
     public class SongSheet : IEntity
