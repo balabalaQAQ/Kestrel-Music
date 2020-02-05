@@ -26,9 +26,14 @@ namespace Kestrel
         public void ConfigureServices(IServiceCollection services)
         {
 
-
+      
             // 添加数据库访问上下文中间件
-            services.AddDbContext<KestrelDbcontext>(opt => opt.UseSqlServer("Server=localhost;Initial Catalog=DKLSystemData; uid=sa;pwd=123456;MultipleActiveResultSets=True"));
+            services.AddDbContext<KestrelDbcontext>(opt => opt.UseSqlServer("Server=localhost;Initial Catalog=KestrelSystemData; uid=sa;pwd=123456;MultipleActiveResultSets=True"));
+
+            //   添加 DI 配置
+            //积分商城
+            services.AddScoped<IEntityRepository<Commodity>, EntityRepository<Commodity>>();
+            services.AddScoped<IWebAPIModelService<Commodity, CommodityVM>, WebAPIModelService<Commodity, CommodityVM>>();
 
             services.AddControllers();
         }

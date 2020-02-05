@@ -5,13 +5,15 @@ VisualStudioVersion = 16.0.29403.142
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kestrel.EntityModel", "Kestrel.EntityModel\Kestrel.EntityModel.csproj", "{100A9103-54A1-410F-832F-7666C9F3661C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kestrel.WebApi", "Kestrel\Kestrel.WebApi.csproj", "{A96FB425-0FFC-4198-AAE1-A65E6992F692}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Kestre01l.实体模型", "Kestre01l.实体模型", "{30D3FCF1-9B96-450B-8648-07A5E611B7F8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Kestrel02.ORM", "Kestrel02.ORM", "{977B0D19-3185-41C2-A1BA-232A2B8E4ECB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kestrel.ORM", "Kestrel.ORM\Kestrel.ORM.csproj", "{5164B75D-1B6B-4A8F-AFD4-823DF9DF4679}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kestrel.ORM", "Kestrel.ORM\Kestrel.ORM.csproj", "{5164B75D-1B6B-4A8F-AFD4-823DF9DF4679}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kestrel.WebApi", "Kestrel.WebApi\Kestrel.WebApi.csproj", "{21AB289F-EF01-465D-AC16-B636FAF8210E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kestrel.IdentityServer4", "Kestrel.IdentityServer4\Kestrel.IdentityServer4.csproj", "{793B2A70-9E5B-4233-9FE4-2C0B36976EF2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,14 +25,18 @@ Global
 		{100A9103-54A1-410F-832F-7666C9F3661C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{100A9103-54A1-410F-832F-7666C9F3661C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{100A9103-54A1-410F-832F-7666C9F3661C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A96FB425-0FFC-4198-AAE1-A65E6992F692}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A96FB425-0FFC-4198-AAE1-A65E6992F692}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A96FB425-0FFC-4198-AAE1-A65E6992F692}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A96FB425-0FFC-4198-AAE1-A65E6992F692}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5164B75D-1B6B-4A8F-AFD4-823DF9DF4679}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5164B75D-1B6B-4A8F-AFD4-823DF9DF4679}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5164B75D-1B6B-4A8F-AFD4-823DF9DF4679}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5164B75D-1B6B-4A8F-AFD4-823DF9DF4679}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21AB289F-EF01-465D-AC16-B636FAF8210E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21AB289F-EF01-465D-AC16-B636FAF8210E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21AB289F-EF01-465D-AC16-B636FAF8210E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21AB289F-EF01-465D-AC16-B636FAF8210E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{793B2A70-9E5B-4233-9FE4-2C0B36976EF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{793B2A70-9E5B-4233-9FE4-2C0B36976EF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{793B2A70-9E5B-4233-9FE4-2C0B36976EF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{793B2A70-9E5B-4233-9FE4-2C0B36976EF2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
