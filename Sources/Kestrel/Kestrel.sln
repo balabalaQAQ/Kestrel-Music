@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29403.142
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Kestrel.实体模型", "Kestrel.实体模型", "{6CD551E4-CB9D-48CD-84E6-67837419E259}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kestrel.EntityModel", "Kestrel.EntityModel\Kestrel.EntityModel.csproj", "{100A9103-54A1-410F-832F-7666C9F3661C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kestrel.EntityModel", "BILI.EntityModel\Kestrel.EntityModel.csproj", "{8FFD31F0-E42B-4E81-BCC3-E1ABC5123A68}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kestrel.WebApi", "Kestrel\Kestrel.WebApi.csproj", "{A96FB425-0FFC-4198-AAE1-A65E6992F692}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kestrel", "Bilibili\Kestrel.csproj", "{B7027771-598D-4E02-8465-49AC9BB14EBB}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Kestrel.实体模型", "Kestrel.实体模型", "{30D3FCF1-9B96-450B-8648-07A5E611B7F8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,20 +15,20 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8FFD31F0-E42B-4E81-BCC3-E1ABC5123A68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8FFD31F0-E42B-4E81-BCC3-E1ABC5123A68}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8FFD31F0-E42B-4E81-BCC3-E1ABC5123A68}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8FFD31F0-E42B-4E81-BCC3-E1ABC5123A68}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B7027771-598D-4E02-8465-49AC9BB14EBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B7027771-598D-4E02-8465-49AC9BB14EBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B7027771-598D-4E02-8465-49AC9BB14EBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B7027771-598D-4E02-8465-49AC9BB14EBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{100A9103-54A1-410F-832F-7666C9F3661C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{100A9103-54A1-410F-832F-7666C9F3661C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{100A9103-54A1-410F-832F-7666C9F3661C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{100A9103-54A1-410F-832F-7666C9F3661C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A96FB425-0FFC-4198-AAE1-A65E6992F692}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A96FB425-0FFC-4198-AAE1-A65E6992F692}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A96FB425-0FFC-4198-AAE1-A65E6992F692}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A96FB425-0FFC-4198-AAE1-A65E6992F692}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{8FFD31F0-E42B-4E81-BCC3-E1ABC5123A68} = {6CD551E4-CB9D-48CD-84E6-67837419E259}
+		{100A9103-54A1-410F-832F-7666C9F3661C} = {30D3FCF1-9B96-450B-8648-07A5E611B7F8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9B1AAF26-67D7-4F9F-B962-93119E4A183C}

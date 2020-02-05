@@ -2,7 +2,7 @@
 using Kestrel.EntityModel.Ffoundation;
 using Kestrel.EntityModel.Music;
 using Kestrel.EntityModel.Tools;
-using Kestrel.EntityModel.User;
+using Kestrel.EntityModel.Users;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -26,18 +26,10 @@ namespace Kestrel.EntityModel
         //创建时间
         public DateTime CreatTime { get; set; }
 
-        //累计播放次数
-        public int AddPlay { get; set; }
-
-        //累计赞👍
-
-        public int AddThumb { get; set; }
-
-        //累计踩👎
-        public int AddTread { get; set; }
+        public virtual MusicOther MusicOther { get; set; }
 
         //歌集图片
-        public BusinessImage BusinessImage { get; set; }
+        public virtual BusinessImage BusinessImage { get; set; }
 
         //评论
         public virtual ICollection<Comment> Comment { get; set; }

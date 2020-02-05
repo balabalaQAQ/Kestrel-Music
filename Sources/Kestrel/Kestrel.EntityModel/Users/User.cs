@@ -3,14 +3,15 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Kestrel.EntityModel.User
+namespace Kestrel.EntityModel.Users
 {
-    public class Comment : IEntity
+    public class User:IEntity
     {
-        public string Name { get; set ; }
+        public Guid ID { get; set; }
+        //名字
+        public string Name { get; set; }
         public string Description { get; set; }
         public string SortCode { get; set; }
         public bool IsPseudoDelete { get; set; }
-        public Guid ID { get; set; }
     }
 }

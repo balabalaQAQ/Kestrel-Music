@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\程序\\ASP.Net Core\\Sources\\BiliBili\\Bilibili\\Kestrel.csproj",
-      "projectName": "Kestrel",
-      "projectPath": "G:\\程序\\ASP.Net Core\\Sources\\BiliBili\\Bilibili\\Kestrel.csproj",
+      "projectUniqueName": "G:\\程序\\ASP.Net Core\\Kestrel-Music\\Sources\\Kestrel\\Kestrel\\Kestrel.WebApi.csproj",
+      "projectName": "Kestrel.WebApi",
+      "projectPath": "G:\\程序\\ASP.Net Core\\Kestrel-Music\\Sources\\Kestrel\\Kestrel\\Kestrel.WebApi.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "G:\\程序\\ASP.Net Core\\Sources\\BiliBili\\Bilibili\\obj\\",
+      "outputPath": "G:\\程序\\ASP.Net Core\\Kestrel-Music\\Sources\\Kestrel\\Kestrel\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

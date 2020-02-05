@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Kestrel.EntityModel.User
+namespace Kestrel.EntityModel.Users
 {
   public  class Author:IEntity
     {
@@ -15,5 +15,7 @@ namespace Kestrel.EntityModel.User
         public string Description { get; set; }
         public string SortCode { get; set; }
         public bool IsPseudoDelete { get; set; }
+
+   
     }
 }

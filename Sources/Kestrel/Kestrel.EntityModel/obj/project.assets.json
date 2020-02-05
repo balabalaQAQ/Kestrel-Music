@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\程序\\ASP.Net Core\\Sources\\BiliBili\\BILI.EntityModel\\Kestrel.EntityModel.csproj",
+      "projectUniqueName": "G:\\程序\\ASP.Net Core\\Kestrel-Music\\Sources\\Kestrel\\Kestrel.EntityModel\\Kestrel.EntityModel.csproj",
       "projectName": "Kestrel.EntityModel",
-      "projectPath": "G:\\程序\\ASP.Net Core\\Sources\\BiliBili\\BILI.EntityModel\\Kestrel.EntityModel.csproj",
+      "projectPath": "G:\\程序\\ASP.Net Core\\Kestrel-Music\\Sources\\Kestrel\\Kestrel.EntityModel\\Kestrel.EntityModel.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "G:\\程序\\ASP.Net Core\\Sources\\BiliBili\\BILI.EntityModel\\obj\\",
+      "outputPath": "G:\\程序\\ASP.Net Core\\Kestrel-Music\\Sources\\Kestrel\\Kestrel.EntityModel\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
