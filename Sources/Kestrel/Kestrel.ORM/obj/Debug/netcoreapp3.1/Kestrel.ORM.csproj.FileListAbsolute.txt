@@ -1,0 +1,8 @@
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel.ORM\obj\Debug\netcoreapp3.1\Kestrel.ORM.csprojAssemblyReference.cache
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel.ORM\obj\Debug\netcoreapp3.1\Kestrel.ORM.AssemblyInfoInputs.cache
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel.ORM\obj\Debug\netcoreapp3.1\Kestrel.ORM.AssemblyInfo.cs
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel.ORM\bin\Debug\netcoreapp3.1\Kestrel.ORM.deps.json
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel.ORM\bin\Debug\netcoreapp3.1\Kestrel.ORM.dll
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel.ORM\bin\Debug\netcoreapp3.1\Kestrel.ORM.pdb
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel.ORM\obj\Debug\netcoreapp3.1\Kestrel.ORM.dll
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel.ORM\obj\Debug\netcoreapp3.1\Kestrel.ORM.pdb

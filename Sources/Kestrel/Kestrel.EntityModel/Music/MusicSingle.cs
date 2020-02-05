@@ -27,7 +27,7 @@ namespace Kestrel.EntityModel.Music
         public ListenLevel ListenLevel { get; set; }
 
         //售价
-        public double Price { get; set; } = 0.00;
+        public decimal Price { get; set; } 
         
         //音乐文件
         public virtual BusinessFile MusicFile { get; set; }
@@ -35,14 +35,10 @@ namespace Kestrel.EntityModel.Music
         //音乐图片
         public virtual BusinessImage MusicImage{ get; set; }
 
-
         //音乐视频
         public virtual BusinessVideo MusicVideo { get; set; }
 
-        
-       
-
-
+        public Album Album { get; set; }
 
     }
 }

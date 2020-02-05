@@ -7,7 +7,6 @@ G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel\bin\Debug\netcoreap
 G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel\bin\Debug\netcoreapp3.0\Kestrel.WebApi.runtimeconfig.dev.json
 G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel\bin\Debug\netcoreapp3.0\Kestrel.WebApi.dll
 G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel\bin\Debug\netcoreapp3.0\Kestrel.WebApi.pdb
-G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel\obj\Debug\netcoreapp3.0\Kestrel.WebApi.csprojAssemblyReference.cache
 G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel\obj\Debug\netcoreapp3.0\staticwebassets\Kestrel.WebApi.StaticWebAssets.Manifest.cache
 G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel\obj\Debug\netcoreapp3.0\staticwebassets\Kestrel.WebApi.StaticWebAssets.xml
 G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel\obj\Debug\netcoreapp3.0\Kestrel.WebApi.MvcApplicationPartsAssemblyInfo.cache
@@ -16,3 +15,4 @@ G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel\obj\Debug\netcoreap
 G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel\obj\Debug\netcoreapp3.0\Kestrel.WebApi.RazorTargetAssemblyInfo.cache
 G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel\obj\Debug\netcoreapp3.0\Kestrel.WebApi.dll
 G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel\obj\Debug\netcoreapp3.0\Kestrel.WebApi.pdb
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel\obj\Debug\netcoreapp3.0\Kestrel.WebApi.csprojAssemblyReference.cache

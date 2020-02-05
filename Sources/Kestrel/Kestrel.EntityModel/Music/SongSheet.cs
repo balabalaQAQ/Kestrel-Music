@@ -14,7 +14,7 @@ namespace Kestrel.EntityModel
     {
         [Key]
         public Guid ID { get; set; }
-        //歌集名称
+        //歌单 名称
         [StringLength(100)]
         public string Name { get; set; }
         //歌单描述
@@ -28,7 +28,7 @@ namespace Kestrel.EntityModel
 
         public virtual MusicOther MusicOther { get; set; }
 
-        //歌集图片
+        //歌单图片
         public virtual BusinessImage BusinessImage { get; set; }
 
         //评论

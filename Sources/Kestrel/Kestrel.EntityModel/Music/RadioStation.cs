@@ -19,7 +19,9 @@ namespace Kestrel.EntityModel.Music
         public string Description { get; set; }
         public string SortCode { get; set; }
         public bool IsPseudoDelete { get; set; }
-       
+
+        //售价
+        public decimal Price { get; set; }
         //所属用户
         public  User User { get; set; }
 
