@@ -28,6 +28,9 @@ namespace Kestrel.WebApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<KestrelDbcontext>(opt => opt.UseSqlServer("Server=localhost;Initial Catalog=DKLSystemData; uid=sa;pwd=123456;MultipleActiveResultSets=True"));
+
+            //   Ìí¼Ó DI ÅäÖÃ
+           
             services.AddControllers();
         }
 
@@ -42,7 +45,7 @@ namespace Kestrel.WebApi
             app.UseHttpsRedirection();
 
             app.UseRouting();
-
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

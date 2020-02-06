@@ -17,7 +17,7 @@ namespace Kestrel.EntityModel.Users
 
         public string Content { get; set; }//评论内容
 
-        public virtual User User { get; set; }//所属用户
+     //   public virtual User User { get; set; }//所属用户
 
         public virtual Album Album { get; set; }//所属专辑
 

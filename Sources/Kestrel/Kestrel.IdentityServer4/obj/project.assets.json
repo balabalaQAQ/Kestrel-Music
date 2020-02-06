@@ -1568,6 +1568,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "Kestrel.EntityModel/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.0",
+        "compile": {
+          "bin/placeholder/Kestrel.EntityModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Kestrel.EntityModel.dll": {}
+        }
       }
     }
   },
@@ -5695,11 +5705,17 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
+    },
+    "Kestrel.EntityModel/1.0.0": {
+      "type": "project",
+      "path": "../Kestrel.EntityModel/Kestrel.EntityModel.csproj",
+      "msbuildProject": "../Kestrel.EntityModel/Kestrel.EntityModel.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.0": [
       "IdentityServer4.AspNetIdentity >= 3.0.0",
+      "Kestrel.EntityModel >= 1.0.0",
       "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 3.0.0",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 3.0.0",
       "Microsoft.AspNetCore.Identity.UI >= 3.0.0",
@@ -5736,7 +5752,11 @@
       },
       "frameworks": {
         "netcoreapp3.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "G:\\程序\\ASP.Net Core\\Kestrel-Music\\Sources\\Kestrel\\Kestrel.EntityModel\\Kestrel.EntityModel.csproj": {
+              "projectPath": "G:\\程序\\ASP.Net Core\\Kestrel-Music\\Sources\\Kestrel\\Kestrel.EntityModel\\Kestrel.EntityModel.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

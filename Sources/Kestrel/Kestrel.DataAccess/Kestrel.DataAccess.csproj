@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Kestrel.EntityModel\Kestrel.EntityModel.csproj" />
+    <ProjectReference Include="..\Kestrel.ORM\Kestrel.ORM.csproj" />
+  </ItemGroup>
+
+</Project>

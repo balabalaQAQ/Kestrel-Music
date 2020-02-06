@@ -12,7 +12,7 @@ namespace Kestrel.ORM
         public KestrelDbcontext(DbContextOptions<KestrelDbcontext> options) : base(options) { }
 
         #region 用户角色实体
-        public DbSet<User> User { get; set; }
+       // public DbSet<User> User { get; set; }
         #endregion
 
         #region 音乐相关实体

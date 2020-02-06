@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29403.142
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kestrel.EntityModel", "Kestrel.EntityModel\Kestrel.EntityModel.csproj", "{100A9103-54A1-410F-832F-7666C9F3661C}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Kestre01l.实体模型", "Kestre01l.实体模型", "{30D3FCF1-9B96-450B-8648-07A5E611B7F8}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Kestre01.实体模型", "Kestre01.实体模型", "{30D3FCF1-9B96-450B-8648-07A5E611B7F8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Kestrel02.ORM", "Kestrel02.ORM", "{977B0D19-3185-41C2-A1BA-232A2B8E4ECB}"
 EndProject
@@ -13,7 +13,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kestrel.ORM", "Kestrel.ORM\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kestrel.WebApi", "Kestrel.WebApi\Kestrel.WebApi.csproj", "{21AB289F-EF01-465D-AC16-B636FAF8210E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kestrel.IdentityServer4", "Kestrel.IdentityServer4\Kestrel.IdentityServer4.csproj", "{793B2A70-9E5B-4233-9FE4-2C0B36976EF2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kestrel.IdentityServer4", "Kestrel.IdentityServer4\Kestrel.IdentityServer4.csproj", "{793B2A70-9E5B-4233-9FE4-2C0B36976EF2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Kestrel03.DataAccess", "Kestrel03.DataAccess", "{343238CE-0176-4899-BF16-9542EE7503DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kestrel.DataAccess", "Kestrel.DataAccess\Kestrel.DataAccess.csproj", "{FB081FA4-E952-4538-9A24-D2283CB05C4F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +41,10 @@ Global
 		{793B2A70-9E5B-4233-9FE4-2C0B36976EF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{793B2A70-9E5B-4233-9FE4-2C0B36976EF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{793B2A70-9E5B-4233-9FE4-2C0B36976EF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB081FA4-E952-4538-9A24-D2283CB05C4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB081FA4-E952-4538-9A24-D2283CB05C4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB081FA4-E952-4538-9A24-D2283CB05C4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB081FA4-E952-4538-9A24-D2283CB05C4F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -44,6 +52,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{100A9103-54A1-410F-832F-7666C9F3661C} = {30D3FCF1-9B96-450B-8648-07A5E611B7F8}
 		{5164B75D-1B6B-4A8F-AFD4-823DF9DF4679} = {977B0D19-3185-41C2-A1BA-232A2B8E4ECB}
+		{FB081FA4-E952-4538-9A24-D2283CB05C4F} = {343238CE-0176-4899-BF16-9542EE7503DB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9B1AAF26-67D7-4F9F-B962-93119E4A183C}

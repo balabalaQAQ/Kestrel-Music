@@ -23,7 +23,7 @@ namespace Kestrel.EntityModel.Music
         //售价
         public decimal Price { get; set; }
         //所属用户
-        public  User User { get; set; }
+     //   public  User User { get; set; }
 
         //类别
         public virtual AlbumGenre AlbumGenre { get; set; }
