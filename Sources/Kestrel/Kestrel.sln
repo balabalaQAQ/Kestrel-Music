@@ -13,11 +13,23 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kestrel.ORM", "Kestrel.ORM\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kestrel.WebApi", "Kestrel.WebApi\Kestrel.WebApi.csproj", "{21AB289F-EF01-465D-AC16-B636FAF8210E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kestrel.IdentityServer4", "Kestrel.IdentityServer4\Kestrel.IdentityServer4.csproj", "{793B2A70-9E5B-4233-9FE4-2C0B36976EF2}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Kestrel03.DataAccess", "Kestrel03.DataAccess", "{343238CE-0176-4899-BF16-9542EE7503DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kestrel.DataAccess", "Kestrel.DataAccess\Kestrel.DataAccess.csproj", "{FB081FA4-E952-4538-9A24-D2283CB05C4F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kestrel.DataAccess", "Kestrel.DataAccess\Kestrel.DataAccess.csproj", "{FB081FA4-E952-4538-9A24-D2283CB05C4F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Kestrel.IdentityServer4.EntityFramework", "Kestrel.IdentityServer4.EntityFramework", "{6063A996-BBFA-46EB-82D4-E6C0D932A740}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kestrel.IdentityServer4.EntityFrameworkDB", "Kestrel.IdentityServer4.EntityFrameworkDB\Kestrel.IdentityServer4.EntityFrameworkDB.csproj", "{272917F1-4857-4899-8E5F-A6A73E21B46A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kestrel. Identity", "Kestrel. Identity\Kestrel. Identity.csproj", "{A3463005-0086-4754-A51E-5FE16AE5239F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Kestrel04.01实体远程数据模型", "Kestrel04.01实体远程数据模型", "{E7F286AE-8527-446D-B930-686A5B7B8F68}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewModel", "ViewModel\ViewModel.csproj", "{1535EA18-3A39-4267-8789-90995A2CD9E1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Kestrel04.02.实体模型与远程数据模型映射服务", "Kestrel04.02.实体模型与远程数据模型映射服务", "{197EB900-69D6-4AF7-8567-9B40F81D186F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kestrel.ViewModelServices", "Kestrel.ViewModelServices\Kestrel.ViewModelServices.csproj", "{1BCFAF0C-1498-497C-AD5A-15994A53DFD3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,14 +49,26 @@ Global
 		{21AB289F-EF01-465D-AC16-B636FAF8210E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{21AB289F-EF01-465D-AC16-B636FAF8210E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{21AB289F-EF01-465D-AC16-B636FAF8210E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{793B2A70-9E5B-4233-9FE4-2C0B36976EF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{793B2A70-9E5B-4233-9FE4-2C0B36976EF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{793B2A70-9E5B-4233-9FE4-2C0B36976EF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{793B2A70-9E5B-4233-9FE4-2C0B36976EF2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FB081FA4-E952-4538-9A24-D2283CB05C4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FB081FA4-E952-4538-9A24-D2283CB05C4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB081FA4-E952-4538-9A24-D2283CB05C4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB081FA4-E952-4538-9A24-D2283CB05C4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{272917F1-4857-4899-8E5F-A6A73E21B46A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{272917F1-4857-4899-8E5F-A6A73E21B46A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{272917F1-4857-4899-8E5F-A6A73E21B46A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{272917F1-4857-4899-8E5F-A6A73E21B46A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3463005-0086-4754-A51E-5FE16AE5239F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3463005-0086-4754-A51E-5FE16AE5239F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3463005-0086-4754-A51E-5FE16AE5239F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3463005-0086-4754-A51E-5FE16AE5239F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1535EA18-3A39-4267-8789-90995A2CD9E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1535EA18-3A39-4267-8789-90995A2CD9E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1535EA18-3A39-4267-8789-90995A2CD9E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1535EA18-3A39-4267-8789-90995A2CD9E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BCFAF0C-1498-497C-AD5A-15994A53DFD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BCFAF0C-1498-497C-AD5A-15994A53DFD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BCFAF0C-1498-497C-AD5A-15994A53DFD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BCFAF0C-1498-497C-AD5A-15994A53DFD3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -53,6 +77,9 @@ Global
 		{100A9103-54A1-410F-832F-7666C9F3661C} = {30D3FCF1-9B96-450B-8648-07A5E611B7F8}
 		{5164B75D-1B6B-4A8F-AFD4-823DF9DF4679} = {977B0D19-3185-41C2-A1BA-232A2B8E4ECB}
 		{FB081FA4-E952-4538-9A24-D2283CB05C4F} = {343238CE-0176-4899-BF16-9542EE7503DB}
+		{272917F1-4857-4899-8E5F-A6A73E21B46A} = {6063A996-BBFA-46EB-82D4-E6C0D932A740}
+		{1535EA18-3A39-4267-8789-90995A2CD9E1} = {E7F286AE-8527-446D-B930-686A5B7B8F68}
+		{1BCFAF0C-1498-497C-AD5A-15994A53DFD3} = {197EB900-69D6-4AF7-8567-9B40F81D186F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9B1AAF26-67D7-4F9F-B962-93119E4A183C}

@@ -1,0 +1,30 @@
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel. Identity\bin\Debug\netcoreapp3.0\appsettings.Development.json
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel. Identity\bin\Debug\netcoreapp3.0\appsettings.json
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel. Identity\bin\Debug\netcoreapp3.0\Properties\launchSettings.json
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel. Identity\bin\Debug\netcoreapp3.0\Kestrel. Identity.exe
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel. Identity\obj\Debug\netcoreapp3.0\Kestrel. Identity.csprojAssemblyReference.cache
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel. Identity\obj\Debug\netcoreapp3.0\staticwebassets\Kestrel. Identity.StaticWebAssets.Manifest.cache
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel. Identity\obj\Debug\netcoreapp3.0\staticwebassets\Kestrel. Identity.StaticWebAssets.xml
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel. Identity\obj\Debug\netcoreapp3.0\Kestrel. Identity.AssemblyInfoInputs.cache
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel. Identity\obj\Debug\netcoreapp3.0\Kestrel. Identity.AssemblyInfo.cs
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel. Identity\obj\Debug\netcoreapp3.0\Kestrel. Identity.RazorTargetAssemblyInfo.cache
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel. Identity\bin\Debug\netcoreapp3.0\Kestrel. Identity.deps.json
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel. Identity\bin\Debug\netcoreapp3.0\Kestrel. Identity.runtimeconfig.json
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel. Identity\bin\Debug\netcoreapp3.0\Kestrel. Identity.runtimeconfig.dev.json
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel. Identity\bin\Debug\netcoreapp3.0\Kestrel. Identity.dll
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel. Identity\bin\Debug\netcoreapp3.0\Kestrel. Identity.pdb
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel. Identity\bin\Debug\netcoreapp3.0\IdentityModel.dll
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel. Identity\bin\Debug\netcoreapp3.0\IdentityServer4.dll
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel. Identity\bin\Debug\netcoreapp3.0\IdentityServer4.Storage.dll
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel. Identity\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel. Identity\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.JsonWebTokens.dll
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel. Identity\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Logging.dll
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel. Identity\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Protocols.dll
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel. Identity\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel. Identity\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Tokens.dll
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel. Identity\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel. Identity\bin\Debug\netcoreapp3.0\System.IdentityModel.Tokens.Jwt.dll
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel. Identity\obj\Debug\netcoreapp3.0\Kestrel. Identity.MvcApplicationPartsAssemblyInfo.cache
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel. Identity\obj\Debug\netcoreapp3.0\Kestrel. Identity.csproj.CopyComplete
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel. Identity\obj\Debug\netcoreapp3.0\Kestrel. Identity.dll
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel. Identity\obj\Debug\netcoreapp3.0\Kestrel. Identity.pdb

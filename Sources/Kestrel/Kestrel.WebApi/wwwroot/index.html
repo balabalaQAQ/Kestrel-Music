@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>To-do 增删查改演示</title>
+
+</head>
+<body>
+    <h1>To-do 增删查改演示</h1>
+    <h3>添加</h3>
+    <form action="javascript:void(0);" method="POST" onsubmit="addItem()">
+        <input type="text" id="add-name" placeholder="新的 TodoItem 数据">
+
+        <input type="text" placeholder="单价" id="add-price"><br>
+        <input type="text" placeholder="简介" id="add-description"><br>
+        <input type="text" placeholder="库存" id="add-stock"><br>
+
+
+        <input type="submit" value="添加数据">
+    </form>
+
+    <div id="editForm">
+        <h3>编辑</h3>
+        <form action="javascript:void(0);" onsubmit="updateItem()">
+            <input type="hidden" id="edit-id">
+            <input type="checkbox" id="edit-isComplete">
+            <input type="text" id="edit-name">
+            <input type="submit" value="保存数据">
+            <a onclick="closeInput()" aria-label="Close">&#10006;</a>
+        </form>
+    </div>
+
+    <!-- 数量 -->
+    <p id="counter"></p>
+
+    <!-- 数据列表 -->
+    <table>
+        <tr>
+            <th>选择</th>
+            <th>名字</th>
+            <th> </th>
+            <th> </th>
+        </tr>
+        <tbody id="todos"></tbody>
+    </table>
+
+    <script src="js/site.js" asp-append-version="true"></script>
+    <script type="text/javascript">
+        // 获取初始化的数据
+        getItems();
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,8 @@
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\ViewModel\bin\Debug\netcoreapp3.1\ViewModel.deps.json
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\ViewModel\bin\Debug\netcoreapp3.1\ViewModel.dll
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\ViewModel\bin\Debug\netcoreapp3.1\Kestrel.EntityModel.dll
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\ViewModel\bin\Debug\netcoreapp3.1\Kestrel.EntityModel.pdb
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\ViewModel\obj\Debug\netcoreapp3.1\ViewModel.csprojAssemblyReference.cache
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\ViewModel\obj\Debug\netcoreapp3.1\ViewModel.AssemblyInfoInputs.cache
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\ViewModel\obj\Debug\netcoreapp3.1\ViewModel.AssemblyInfo.cs
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\ViewModel\obj\Debug\netcoreapp3.1\ViewModel.csproj.CopyComplete

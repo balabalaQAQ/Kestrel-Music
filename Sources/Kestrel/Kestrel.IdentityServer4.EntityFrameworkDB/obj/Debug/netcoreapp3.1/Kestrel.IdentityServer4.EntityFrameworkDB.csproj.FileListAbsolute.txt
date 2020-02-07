@@ -1,0 +1,5 @@
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel.IdentityServer4.EntityFrameworkDB\bin\Debug\netcoreapp3.1\Kestrel.IdentityServer4.EntityFrameworkDB.deps.json
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel.IdentityServer4.EntityFrameworkDB\bin\Debug\netcoreapp3.1\Kestrel.IdentityServer4.EntityFrameworkDB.dll
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel.IdentityServer4.EntityFrameworkDB\obj\Debug\netcoreapp3.1\Kestrel.IdentityServer4.EntityFrameworkDB.csprojAssemblyReference.cache
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel.IdentityServer4.EntityFrameworkDB\obj\Debug\netcoreapp3.1\Kestrel.IdentityServer4.EntityFrameworkDB.AssemblyInfoInputs.cache
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel.IdentityServer4.EntityFrameworkDB\obj\Debug\netcoreapp3.1\Kestrel.IdentityServer4.EntityFrameworkDB.AssemblyInfo.cs

@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "ViewModel/1.0.0": {
+        "dependencies": {
+          "Kestrel.EntityModel": "1.0.0"
+        },
+        "runtime": {
+          "ViewModel.dll": {}
+        }
+      },
+      "Kestrel.EntityModel/1.0.0": {
+        "runtime": {
+          "Kestrel.EntityModel.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ViewModel/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Kestrel.EntityModel/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

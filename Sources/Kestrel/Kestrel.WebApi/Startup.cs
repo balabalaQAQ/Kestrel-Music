@@ -27,11 +27,22 @@ namespace Kestrel.WebApi
         // This method gets called by the runtime. Use this method to add services to the container.UseSqlServer
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<KestrelDbcontext>(opt => opt.UseSqlServer("Server=localhost;Initial Catalog=DKLSystemData; uid=sa;pwd=123456;MultipleActiveResultSets=True"));
-
+            services.AddDbContext<KestrelDbcontext>(opt => opt.UseSqlServer("Server=localhost;Initial Catalog=KestrelSystemData; uid=sa;pwd=123456;MultipleActiveResultSets=True"));
+            services.AddMvcCore().AddAuthorization();
             //   添加 DI 配置
-           
+
             services.AddControllers();
+
+            services.AddAuthentication("Bearer")
+           .AddJwtBearer("Bearer", options =>
+           {
+               options.Authority = "http://localhost:5000";
+               options.RequireHttpsMetadata = false;    
+
+               options.Audience = "music_api";
+           });
+
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -41,16 +52,20 @@ namespace Kestrel.WebApi
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            app.UseDefaultFiles();
             app.UseHttpsRedirection();
 
             app.UseRouting();
-            app.UseAuthentication();
-            app.UseAuthorization();
+
+            app.UseAuthentication();//认证
+            app.UseAuthorization();//授权
+
+
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+             
             });
         }
     }
