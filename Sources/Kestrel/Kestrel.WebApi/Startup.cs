@@ -12,6 +12,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
+using Kestrel._Identity;
 
 namespace Kestrel.WebApi
 {
@@ -27,6 +28,13 @@ namespace Kestrel.WebApi
         // This method gets called by the runtime. Use this method to add services to the container.UseSqlServer
         public void ConfigureServices(IServiceCollection services)
         {
+            var builder = services.AddIdentityServer()
+             .AddTestUsers(Config.User)
+            .AddInMemoryApiResources(Config.GetApis())
+            .AddInMemoryClients(Config.GetClients());
+
+
+            builder.AddDeveloperSigningCredential();//Text专用
             services.AddDbContext<KestrelDbcontext>(opt => opt.UseSqlServer("Server=localhost;Initial Catalog=KestrelSystemData; uid=sa;pwd=123456;MultipleActiveResultSets=True"));
             services.AddMvcCore().AddAuthorization();
             //   添加 DI 配置
@@ -57,6 +65,7 @@ namespace Kestrel.WebApi
 
             app.UseRouting();
 
+            app.UseIdentityServer();
             app.UseAuthentication();//认证
             app.UseAuthorization();//授权
 

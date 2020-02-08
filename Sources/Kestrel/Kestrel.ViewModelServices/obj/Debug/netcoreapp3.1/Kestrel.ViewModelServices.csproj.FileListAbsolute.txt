@@ -1,0 +1,17 @@
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel.ViewModelServices\bin\Debug\netcoreapp3.1\Kestrel.ViewModelServices.deps.json
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel.ViewModelServices\bin\Debug\netcoreapp3.1\Kestrel.ViewModelServices.dll
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel.ViewModelServices\bin\Debug\netcoreapp3.1\Kestrel.ViewModelServices.pdb
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel.ViewModelServices\bin\Debug\netcoreapp3.1\Kestrel.DataAccess.dll
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel.ViewModelServices\bin\Debug\netcoreapp3.1\Kestrel.EntityModel.dll
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel.ViewModelServices\bin\Debug\netcoreapp3.1\Kestrel.ORM.dll
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel.ViewModelServices\bin\Debug\netcoreapp3.1\ViewModel.dll
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel.ViewModelServices\bin\Debug\netcoreapp3.1\Kestrel.DataAccess.pdb
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel.ViewModelServices\bin\Debug\netcoreapp3.1\Kestrel.EntityModel.pdb
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel.ViewModelServices\bin\Debug\netcoreapp3.1\ViewModel.pdb
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel.ViewModelServices\bin\Debug\netcoreapp3.1\Kestrel.ORM.pdb
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel.ViewModelServices\obj\Debug\netcoreapp3.1\Kestrel.ViewModelServices.csprojAssemblyReference.cache
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel.ViewModelServices\obj\Debug\netcoreapp3.1\Kestrel.ViewModelServices.AssemblyInfoInputs.cache
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel.ViewModelServices\obj\Debug\netcoreapp3.1\Kestrel.ViewModelServices.AssemblyInfo.cs
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel.ViewModelServices\obj\Debug\netcoreapp3.1\Kestrel.ViewModelServices.csproj.CopyComplete
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel.ViewModelServices\obj\Debug\netcoreapp3.1\Kestrel.ViewModelServices.dll
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel.ViewModelServices\obj\Debug\netcoreapp3.1\Kestrel.ViewModelServices.pdb
