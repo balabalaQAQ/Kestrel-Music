@@ -9,3 +9,14 @@ G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\ViewModel\obj\Debug\netcore
 G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\ViewModel\obj\Debug\netcoreapp3.1\Kestrel.ViewModel.csproj.CopyComplete
 G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\ViewModel\obj\Debug\netcoreapp3.1\Kestrel.ViewModel.dll
 G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\ViewModel\obj\Debug\netcoreapp3.1\Kestrel.ViewModel.pdb
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel.ViewModel\bin\Debug\netcoreapp3.1\Kestrel.ViewModel.deps.json
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel.ViewModel\bin\Debug\netcoreapp3.1\Kestrel.ViewModel.dll
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel.ViewModel\bin\Debug\netcoreapp3.1\Kestrel.ViewModel.pdb
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel.ViewModel\bin\Debug\netcoreapp3.1\Kestrel.EntityModel.dll
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel.ViewModel\bin\Debug\netcoreapp3.1\Kestrel.EntityModel.pdb
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel.ViewModel\obj\Debug\netcoreapp3.1\Kestrel.ViewModel.csprojAssemblyReference.cache
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel.ViewModel\obj\Debug\netcoreapp3.1\Kestrel.ViewModel.AssemblyInfoInputs.cache
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel.ViewModel\obj\Debug\netcoreapp3.1\Kestrel.ViewModel.AssemblyInfo.cs
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel.ViewModel\obj\Debug\netcoreapp3.1\Kestrel.ViewModel.csproj.CopyComplete
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel.ViewModel\obj\Debug\netcoreapp3.1\Kestrel.ViewModel.dll
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel.ViewModel\obj\Debug\netcoreapp3.1\Kestrel.ViewModel.pdb

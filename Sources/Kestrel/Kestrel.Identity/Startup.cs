@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Kestrel.ORM;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -16,7 +17,7 @@ namespace Kestrel.Identity
 {
     public class Startup
     {
-        private string connectionString = @"Data Source=S4F91FY1JZBZ19H\SA;Initial Catalog=Kestrel.Identity;User ID=sa;Password=********;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+        private string connectionString = "Server=localhost;Initial Catalog=KestrelSystemData; uid=sa;pwd=123456;MultipleActiveResultSets=True";
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -31,11 +32,11 @@ namespace Kestrel.Identity
             services.AddControllers();
 
 
-            services.AddDbContext<IdentityDbContext>(options => options.UseSqlServer(connectionString));
+            services.AddDbContext<ApplicationDbcontext>(options => options.UseSqlServer(connectionString));
 
 
             services.AddIdentity<IdentityUser, IdentityRole>()
-                .AddEntityFrameworkStores<IdentityDbContext>()
+                .AddEntityFrameworkStores<ApplicationDbcontext>()
                 .AddDefaultTokenProviders();
 
             services.AddAuthentication();//配置认证服务

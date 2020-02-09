@@ -7,6 +7,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Kestrel.DataAccess\Kestrel.DataAccess.csproj" />
     <ProjectReference Include="..\Kestrel.EntityModel\Kestrel.EntityModel.csproj" />
+    <ProjectReference Include="..\Kestrel.ViewModel\Kestrel.ViewModel.csproj" />
     <ProjectReference Include="..\ViewModel\Kestrel.ViewModel.csproj" />
   </ItemGroup>
 

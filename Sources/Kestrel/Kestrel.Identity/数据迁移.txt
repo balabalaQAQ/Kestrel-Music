@@ -1,0 +1,11 @@
+add-migration KestrelIdentity-C -c ConfigurationDbContext -o Data/Migrations/IdentityServer/ConfigurationDb
+
+add-migration KestrelIdentity-P -c PersistedGrantDbContext -o Data/Migrations/IdentityServer/ConfigurationDb
+
+add-migration KestrelIdentity-A -c ApplicationDbcontext -o Data/Migrations/IdentityServer/ConfigurationDb
+
+update-database -c ConfigurationDbContext
+
+update-database -c PersistedGrantDbContext
+
+update-database -c ApplicationDbcontext
