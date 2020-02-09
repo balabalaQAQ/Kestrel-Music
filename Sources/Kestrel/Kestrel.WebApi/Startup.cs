@@ -28,6 +28,7 @@ namespace Kestrel.WebApi
         // This method gets called by the runtime. Use this method to add services to the container.UseSqlServer
         public void ConfigureServices(IServiceCollection services)
         {
+         
             var builder = services.AddIdentityServer()
              .AddTestUsers(Config.User)
             .AddInMemoryApiResources(Config.GetApis())
@@ -69,7 +70,7 @@ namespace Kestrel.WebApi
             app.UseAuthentication();//ÈÏÖ¤
             app.UseAuthorization();//ÊÚÈ¨
 
-
+        
 
             app.UseEndpoints(endpoints =>
             {

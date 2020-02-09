@@ -31,21 +31,22 @@ namespace Kestrel.Identity
 
             services.AddControllers();
 
+            
+            services.AddDbContext<ApplicationDbcontext>(options =>
+                options.UseSqlServer(connectionString));
 
-            services.AddDbContext<ApplicationDbcontext>(options => options.UseSqlServer(connectionString));
 
-
-            services.AddIdentity<IdentityUser, IdentityRole>()
+            services.AddIdentity<ApplicationUser, IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbcontext>()
                 .AddDefaultTokenProviders();
 
-            services.AddAuthentication();//配置认证服务
+          
 
-            //clients,resources
 
-            var builder = services.AddIdentityServer()
-               .AddAspNetIdentity<IdentityUser>()
+               var builder = services.AddIdentityServer()
+               .AddAspNetIdentity<ApplicationUser>()
 
+               //clients,resources
                .AddConfigurationStore(options =>
                {
                    options.ConfigureDbContext = b => b.UseSqlServer(connectionString,
@@ -60,7 +61,8 @@ namespace Kestrel.Identity
                    options.EnableTokenCleanup = true;//自动清理token
                });
 
-
+           
+            services.AddAuthentication();//配置认证服务
 
         }
 
@@ -72,15 +74,13 @@ namespace Kestrel.Identity
                 app.UseDeveloperExceptionPage();
             }
             app.UseIdentityServer();
-            //    app.UseRouting();
-
-            //app.UseEndpoints(endpoints =>
-            //{
-            //    endpoints.MapGet("/", async context =>
-            //    {
-            //        await context.Response.WriteAsync("Hello World!");
-            //    });
-            //});
+            app.UseRouting();
+          
+            app.UseStaticFiles();
+            app.UseIdentityServer();
+            app.UseMvcWithDefaultRoute();
+          
+            
         }
     }
 }
