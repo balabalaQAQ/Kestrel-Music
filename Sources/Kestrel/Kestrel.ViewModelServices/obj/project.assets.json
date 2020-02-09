@@ -1364,7 +1364,7 @@
           "bin/placeholder/Kestrel.ORM.dll": {}
         }
       },
-      "ViewModel/1.0.0": {
+      "Kestrel.ViewModel/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
@@ -1372,10 +1372,10 @@
           "Newtonsoft.Json": "11.0.2"
         },
         "compile": {
-          "bin/placeholder/ViewModel.dll": {}
+          "bin/placeholder/Kestrel.ViewModel.dll": {}
         },
         "runtime": {
-          "bin/placeholder/ViewModel.dll": {}
+          "bin/placeholder/Kestrel.ViewModel.dll": {}
         }
       }
     }
@@ -5120,17 +5120,17 @@
       "path": "../Kestrel.ORM/Kestrel.ORM.csproj",
       "msbuildProject": "../Kestrel.ORM/Kestrel.ORM.csproj"
     },
-    "ViewModel/1.0.0": {
+    "Kestrel.ViewModel/1.0.0": {
       "type": "project",
-      "path": "../ViewModel/ViewModel.csproj",
-      "msbuildProject": "../ViewModel/ViewModel.csproj"
+      "path": "../ViewModel/Kestrel.ViewModel.csproj",
+      "msbuildProject": "../ViewModel/Kestrel.ViewModel.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Kestrel.DataAccess >= 1.0.0",
       "Kestrel.EntityModel >= 1.0.0",
-      "ViewModel >= 1.0.0"
+      "Kestrel.ViewModel >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -5169,8 +5169,8 @@
             "G:\\程序\\ASP.Net Core\\Kestrel-Music\\Sources\\Kestrel\\Kestrel.EntityModel\\Kestrel.EntityModel.csproj": {
               "projectPath": "G:\\程序\\ASP.Net Core\\Kestrel-Music\\Sources\\Kestrel\\Kestrel.EntityModel\\Kestrel.EntityModel.csproj"
             },
-            "G:\\程序\\ASP.Net Core\\Kestrel-Music\\Sources\\Kestrel\\ViewModel\\ViewModel.csproj": {
-              "projectPath": "G:\\程序\\ASP.Net Core\\Kestrel-Music\\Sources\\Kestrel\\ViewModel\\ViewModel.csproj"
+            "G:\\程序\\ASP.Net Core\\Kestrel-Music\\Sources\\Kestrel\\ViewModel\\Kestrel.ViewModel.csproj": {
+              "projectPath": "G:\\程序\\ASP.Net Core\\Kestrel-Music\\Sources\\Kestrel\\ViewModel\\Kestrel.ViewModel.csproj"
             }
           }
         }

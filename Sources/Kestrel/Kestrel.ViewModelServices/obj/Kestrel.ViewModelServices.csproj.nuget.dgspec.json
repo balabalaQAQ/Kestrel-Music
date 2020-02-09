@@ -238,8 +238,8 @@
               "G:\\程序\\ASP.Net Core\\Kestrel-Music\\Sources\\Kestrel\\Kestrel.EntityModel\\Kestrel.EntityModel.csproj": {
                 "projectPath": "G:\\程序\\ASP.Net Core\\Kestrel-Music\\Sources\\Kestrel\\Kestrel.EntityModel\\Kestrel.EntityModel.csproj"
               },
-              "G:\\程序\\ASP.Net Core\\Kestrel-Music\\Sources\\Kestrel\\ViewModel\\ViewModel.csproj": {
-                "projectPath": "G:\\程序\\ASP.Net Core\\Kestrel-Music\\Sources\\Kestrel\\ViewModel\\ViewModel.csproj"
+              "G:\\程序\\ASP.Net Core\\Kestrel-Music\\Sources\\Kestrel\\ViewModel\\Kestrel.ViewModel.csproj": {
+                "projectPath": "G:\\程序\\ASP.Net Core\\Kestrel-Music\\Sources\\Kestrel\\ViewModel\\Kestrel.ViewModel.csproj"
               }
             }
           }
@@ -271,12 +271,12 @@
         }
       }
     },
-    "G:\\程序\\ASP.Net Core\\Kestrel-Music\\Sources\\Kestrel\\ViewModel\\ViewModel.csproj": {
+    "G:\\程序\\ASP.Net Core\\Kestrel-Music\\Sources\\Kestrel\\ViewModel\\Kestrel.ViewModel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\程序\\ASP.Net Core\\Kestrel-Music\\Sources\\Kestrel\\ViewModel\\ViewModel.csproj",
-        "projectName": "ViewModel",
-        "projectPath": "G:\\程序\\ASP.Net Core\\Kestrel-Music\\Sources\\Kestrel\\ViewModel\\ViewModel.csproj",
+        "projectUniqueName": "G:\\程序\\ASP.Net Core\\Kestrel-Music\\Sources\\Kestrel\\ViewModel\\Kestrel.ViewModel.csproj",
+        "projectName": "Kestrel.ViewModel",
+        "projectPath": "G:\\程序\\ASP.Net Core\\Kestrel-Music\\Sources\\Kestrel\\ViewModel\\Kestrel.ViewModel.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
         "outputPath": "G:\\程序\\ASP.Net Core\\Kestrel-Music\\Sources\\Kestrel\\ViewModel\\obj\\",
         "projectStyle": "PackageReference",
