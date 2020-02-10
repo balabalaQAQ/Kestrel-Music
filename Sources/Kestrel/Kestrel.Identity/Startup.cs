@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.Encodings.Web;
+using System.Text.Unicode;
 using System.Threading.Tasks;
 using Kestrel.ORM;
 using Microsoft.AspNetCore.Builder;
@@ -29,9 +31,9 @@ namespace Kestrel.Identity
         public void ConfigureServices(IServiceCollection services)
         {
 
-            services.AddControllers();
-
-            
+          
+            services.AddControllersWithViews();
+            services.AddSingleton(HtmlEncoder.Create(UnicodeRanges.All));
             services.AddDbContext<ApplicationDbcontext>(options =>
                 options.UseSqlServer(connectionString));
 
@@ -73,14 +75,33 @@ namespace Kestrel.Identity
             {
                 app.UseDeveloperExceptionPage();
             }
+            else
+            {
+                app.UseExceptionHandler("/Home/Error");
+                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+                app.UseHsts();
+            } 
+
             app.UseIdentityServer();
-            app.UseRouting();
-          
+
+            app.UseHttpsRedirection();
             app.UseStaticFiles();
-            app.UseIdentityServer();
-            app.UseMvcWithDefaultRoute();
-          
-            
+
+            app.UseRouting();
+
+            app.UseAuthorization();
+
+
+      
+
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllerRoute(
+                    name: "default",
+                    pattern: "{controller=Home}/{action=Index}/{id?}");
+            });
+
+
         }
     }
 }
