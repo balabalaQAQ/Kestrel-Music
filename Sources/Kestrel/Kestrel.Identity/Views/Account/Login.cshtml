@@ -1,89 +1,113 @@
-@model LoginViewModel
+﻿@model LoginViewModel
 
-  
-<div class="login-page">
-    <div class="page-header">
-        <h1>Login</h1>
-    </div>
+<link href="~/css/login_styles.css" rel="stylesheet" />
 
-    <partial name="_ValidationSummary" />
+<script src="~/js/bootstrap-show-password.js"></script>
 
-    <div class="row">
+<div class="htmleaf-container">
+    <div class="wrapper">
+        <div class="containerLogin">
+            <h1>KestrelIdp</h1>
 
-        @if (Model.EnableLocalLogin)
-        {
-            <div class="col-sm-6">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Local Login</h3>
-                    </div>
-                    <div class="panel-body">
 
-                        <form asp-route="Login">
-                            <input type="hidden" asp-for="ReturnUrl" />
+            <partial name="_ValidationSummary" />
 
-                            <fieldset>
-                                <div class="form-group">
-                                    <label asp-for="Username"></label>
-                                    <input class="form-control" placeholder="Username" asp-for="Username" autofocus>
-                                </div>
-                                <div class="form-group">
-                                    <label asp-for="Password"></label>
-                                    <input type="password" class="form-control" placeholder="Password" asp-for="Password" autocomplete="off">
-                                </div>
-                                @if (Model.AllowRememberLogin)
+            @if (Model.EnableLocalLogin)
+            {
+                <form asp-route="Login" class="form login-container">
+                    <input type="hidden" asp-for="ReturnUrl" />
+                    <input class="login-name" value="Kestreladmin" placeholder="Username" asp-for="Username">
+                    @*<input class="login-pass" type="password" placeholder="Password" asp-for="Password" autocomplete="off">*@
+
+                    <p class="pass-with-show">
+                        <input data-toggle="password"
+                               data-placement="after"
+                               class="login-pass form-control"
+                               type="password"
+                               value="123@Abc"
+                               asp-for="Password"
+                               placeholder="密码"
+                               data-eye-class="material-icons"
+                               data-eye-open-class="visibility"
+                               data-eye-close-class="visibility_off"
+                               data-eye-class-position-inside="true"
+                               data-message="点击隐藏或显示密码">
+                    </p>
+
+
+                    @if (Model.AllowRememberLogin)
+                    {
+                        <div class="form-group login-remember">
+                            <label asp-for="RememberLogin">
+                                <input asp-for="RememberLogin">
+                                <strong>Remember My Login</strong>
+                            </label>
+                        </div>
+                    }
+
+                        <div>
+                            <br />
+                        
+                        </div>
+
+
+                    <button type="submit" class="login" name="button" value="login">Login</button>
+                    <button name="button" value="cancel">Cancel</button>
+
+
+                    <p class="to-register"><a href="register" class="register">没有账号? 去注册</a><a href="forgot-password" class="reset">忘记密码？重置</a></p>
+                </form>
+
+            }
+            @if (Model.VisibleExternalProviders.Any())
+            {
+                <div class="col-md-6 col-sm-6 external-providers">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">External Login</h3>
+                        </div>
+                        <div class="panel-body">
+                            <ul class="list-inline">
+                                @foreach (var provider in Model.VisibleExternalProviders)
                                 {
-                                    <div class="form-group login-remember">
-                                        <label asp-for="RememberLogin">
-                                            <input asp-for="RememberLogin">
-                                            <strong>Remember My Login</strong>
-                                        </label>
-                                    </div>
+                                    <li>
+                                        <a class="btn btn-default"
+                                           asp-controller="External"
+                                           asp-action="Challenge"
+                                           asp-route-provider="@provider.AuthenticationScheme"
+                                           asp-route-returnUrl="@Model.ReturnUrl">
+                                            @provider.DisplayName
+                                        </a>
+                                    </li>
                                 }
-                            <div class="form-group">
-                                <button class="btn btn-primary" name="button" value="login">��¼123</button>
-                                <button class="btn btn-primary" name="button" value="register"> ע�� </button>
-                                <button class="btn btn-default" name="button" value="cancel"> ȡ�� </button>
-                            </div>
-                            </fieldset>
-                        </form>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-        }
-        @if (Model.VisibleExternalProviders.Any())
-        {
-            <div class="col-md-6 col-sm-6 external-providers">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">External Login</h3>
-                    </div>
-                    <div class="panel-body">
-                        <ul class="list-inline">
-                            @foreach (var provider in Model.VisibleExternalProviders)
-                            {
-                                <li>
-                                    <a class="btn btn-default"
-                                       asp-controller="External"
-                                       asp-action="Challenge"
-                                       asp-route-provider="@provider.AuthenticationScheme"
-                                       asp-route-returnUrl="@Model.ReturnUrl">
-                                        @provider.DisplayName
-                                    </a>
-                                </li>
-                            }
-                        </ul>
-                    </div>
+            }
+            @if (!Model.EnableLocalLogin && !Model.VisibleExternalProviders.Any())
+            {
+                <div class="alert alert-warning">
+                    <strong>Invalid login request</strong>
+                    There are no login schemes configured for this client.
                 </div>
-            </div>
-        }
+            }
 
-        @if (!Model.EnableLocalLogin && !Model.VisibleExternalProviders.Any())
-        {
-            <div class="alert alert-warning">
-                <strong>Invalid login request</strong>
-                There are no login schemes configured for this client.
-            </div>
-        }
+        </div>
+
+        <ul class="bg-bubbles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
     </div>
 </div>
+
+

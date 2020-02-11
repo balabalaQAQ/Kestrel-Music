@@ -12,7 +12,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
-using Kestrel._Identity;
+using Kestrel.Identity;
 
 namespace Kestrel.WebApi
 {
@@ -69,8 +69,7 @@ namespace Kestrel.WebApi
             app.UseIdentityServer();
             app.UseAuthentication();//ÈÏÖ¤
             app.UseAuthorization();//ÊÚÈ¨
-
-        
+ 
 
             app.UseEndpoints(endpoints =>
             {

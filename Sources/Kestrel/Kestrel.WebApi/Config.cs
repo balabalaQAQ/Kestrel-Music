@@ -2,9 +2,9 @@
 using IdentityServer4.Test;
 using System.Collections.Generic;
 
-namespace Kestrel._Identity
+namespace Kestrel.Identity
 {
-    public class Config
+    public static class Config
     {
 
 

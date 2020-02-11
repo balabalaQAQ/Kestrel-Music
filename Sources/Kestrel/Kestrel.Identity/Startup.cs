@@ -4,7 +4,8 @@ using System.Linq;
 using System.Text.Encodings.Web;
 using System.Text.Unicode;
 using System.Threading.Tasks;
-using Kestrel.ORM;
+using Kestrel.IdentityServer.Models;
+ 
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -30,22 +31,21 @@ namespace Kestrel.Identity
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+           
+           // services.AddSingleton(HtmlEncoder.Create(UnicodeRanges.All));
 
-          
-            services.AddControllersWithViews();
-            services.AddSingleton(HtmlEncoder.Create(UnicodeRanges.All));
             services.AddDbContext<ApplicationDbcontext>(options =>
                 options.UseSqlServer(connectionString));
 
 
-            services.AddIdentity<ApplicationUser, IdentityRole>()
+            services.AddIdentity<ApplicationUser, ApplicationRole>()
                 .AddEntityFrameworkStores<ApplicationDbcontext>()
                 .AddDefaultTokenProviders();
 
-          
+            services.AddMvc();
 
 
-               var builder = services.AddIdentityServer()
+            var builder = services.AddIdentityServer()
                .AddAspNetIdentity<ApplicationUser>()
 
                //clients,resources
@@ -71,28 +71,27 @@ namespace Kestrel.Identity
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            app.UseCookiePolicy();
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                //app.UseDatabaseErrorPage();
             }
             else
             {
                 app.UseExceptionHandler("/Home/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-                app.UseHsts();
-            } 
+            }
+
+            app.UseStaticFiles();
+            app.UseRouting();
+            app.UseHttpsRedirection();
+ 
+
 
             app.UseIdentityServer();
-
-            app.UseHttpsRedirection();
-            app.UseStaticFiles();
-
-            app.UseRouting();
-
+            app.UseAuthentication();
             app.UseAuthorization();
-
-
-      
 
             app.UseEndpoints(endpoints =>
             {
