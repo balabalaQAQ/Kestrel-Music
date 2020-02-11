@@ -51,7 +51,14 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">@name <b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li><a asp-action="Logout" asp-controller="Account">Logout</a></li>
+                            <li><a asp-action="Logout" asp-controller="Account">注销</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Users <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a asp-action="Users" asp-controller="Account">管理</a></li>
                         </ul>
                     </li>
                 }
