@@ -28,6 +28,21 @@
           "lib/netstandard2.0/IdentityModel.dll": {}
         }
       },
+      "IdentityModel.AspNetCore.OAuth2Introspection/4.0.0": {
+        "type": "package",
+        "dependencies": {
+          "IdentityModel": "4.0.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.0/IdentityModel.AspNetCore.OAuth2Introspection.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/IdentityModel.AspNetCore.OAuth2Introspection.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "IdentityServer4/3.0.0": {
         "type": "package",
         "dependencies": {
@@ -41,6 +56,22 @@
         },
         "runtime": {
           "lib/netcoreapp3.0/IdentityServer4.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "IdentityServer4.AccessTokenValidation/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "IdentityModel.AspNetCore.OAuth2Introspection": "4.0.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "3.0.0-preview9.19424.4"
+        },
+        "compile": {
+          "lib/netcoreapp3.0/IdentityServer4.AccessTokenValidation.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/IdentityServer4.AccessTokenValidation.dll": {}
         },
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
@@ -127,6 +158,21 @@
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Authentication.Core.dll": {}
         }
+      },
+      "Microsoft.AspNetCore.Authentication.JwtBearer/3.0.0-preview9.19424.4": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.Protocols.OpenIdConnect": "5.5.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "Microsoft.AspNetCore.Authentication.OpenIdConnect/3.0.0-preview9.19424.4": {
         "type": "package",
@@ -2001,6 +2047,20 @@
         "lib/netstandard2.0/IdentityModel.xml"
       ]
     },
+    "IdentityModel.AspNetCore.OAuth2Introspection/4.0.0": {
+      "sha512": "DWY6sJ40w/+Gf12OzJGIdwh5WvfK8a7KLUJ9fXyquzV8rEDT5ZP+2vEJHZPAzyAZZx38LHBQZwwW4ElLcoBkSA==",
+      "type": "package",
+      "path": "identitymodel.aspnetcore.oauth2introspection/4.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "identitymodel.aspnetcore.oauth2introspection.4.0.0.nupkg.sha512",
+        "identitymodel.aspnetcore.oauth2introspection.nuspec",
+        "lib/netcoreapp3.0/IdentityModel.AspNetCore.OAuth2Introspection.dll",
+        "lib/netcoreapp3.0/IdentityModel.AspNetCore.OAuth2Introspection.pdb",
+        "lib/netcoreapp3.0/IdentityModel.AspNetCore.OAuth2Introspection.xml"
+      ]
+    },
     "IdentityServer4/3.0.0": {
       "sha512": "wgsOq/dKm+V6ZMF14dmOe4m7c5eGmthqv9LCK+ZTEjYbqfUa3ZuhVOybhuTlpra6ZiWIePmD2/Qf/vVQjRJwsw==",
       "type": "package",
@@ -2013,6 +2073,20 @@
         "lib/netcoreapp3.0/IdentityServer4.dll",
         "lib/netcoreapp3.0/IdentityServer4.pdb",
         "lib/netcoreapp3.0/IdentityServer4.xml"
+      ]
+    },
+    "IdentityServer4.AccessTokenValidation/3.0.0": {
+      "sha512": "28O1OOHVvG6KvZDq34F8hf8JiTP1J8FIIS3Zcyc5VbVb/UimSMkfjqBJ9gCNJBjEU4SZgyQ1sSXB2Gjyl9OqKw==",
+      "type": "package",
+      "path": "identityserver4.accesstokenvalidation/3.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "identityserver4.accesstokenvalidation.3.0.0.nupkg.sha512",
+        "identityserver4.accesstokenvalidation.nuspec",
+        "lib/netcoreapp3.0/IdentityServer4.AccessTokenValidation.dll",
+        "lib/netcoreapp3.0/IdentityServer4.AccessTokenValidation.pdb",
+        "lib/netcoreapp3.0/IdentityServer4.AccessTokenValidation.xml"
       ]
     },
     "IdentityServer4.AspNetIdentity/3.0.0": {
@@ -2095,6 +2169,19 @@
         "lib/netstandard2.0/Microsoft.AspNetCore.Authentication.Core.xml",
         "microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",
         "microsoft.aspnetcore.authentication.core.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Authentication.JwtBearer/3.0.0-preview9.19424.4": {
+      "sha512": "fKg+Epu0a9jD3YBYUgaU+l+v7AsWEKwTgd7h3KKbLTM88T0UL6e94m/Ggw8icrLJX12jWWcrV46vxQbH5UjVBw==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.authentication.jwtbearer/3.0.0-preview9.19424.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netcoreapp3.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll",
+        "lib/netcoreapp3.0/Microsoft.AspNetCore.Authentication.JwtBearer.xml",
+        "microsoft.aspnetcore.authentication.jwtbearer.3.0.0-preview9.19424.4.nupkg.sha512",
+        "microsoft.aspnetcore.authentication.jwtbearer.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Authentication.OpenIdConnect/3.0.0-preview9.19424.4": {
@@ -6643,6 +6730,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.0": [
       "IdentityServer4 >= 3.0.0",
+      "IdentityServer4.AccessTokenValidation >= 3.0.0",
       "IdentityServer4.AspNetIdentity >= 3.0.0",
       "IdentityServer4.EntityFramework >= 3.0.0",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 3.0.0",
@@ -6694,6 +6782,10 @@
       "netcoreapp3.0": {
         "dependencies": {
           "IdentityServer4": {
+            "target": "Package",
+            "version": "[3.0.0, )"
+          },
+          "IdentityServer4.AccessTokenValidation": {
             "target": "Package",
             "version": "[3.0.0, )"
           },

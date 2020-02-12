@@ -14,7 +14,7 @@ namespace Kestrel.Identity
         public static void Main(string[] args)
         {
             var host = CreateHostBuilder(args).Build();
-            SeedData.EnsureSeedData(host.Services);
+          //  SeedData.EnsureSeedData(host.Services);
             host.Run();
 
 

@@ -5,7 +5,7 @@ using System.Text.Encodings.Web;
 using System.Text.Unicode;
 using System.Threading.Tasks;
 using Kestrel.IdentityServer.Models;
- 
+
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -31,8 +31,8 @@ namespace Kestrel.Identity
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-           
-           // services.AddSingleton(HtmlEncoder.Create(UnicodeRanges.All));
+
+            // services.AddSingleton(HtmlEncoder.Create(UnicodeRanges.All));
 
             services.AddDbContext<ApplicationDbcontext>(options =>
                 options.UseSqlServer(connectionString));
@@ -63,7 +63,14 @@ namespace Kestrel.Identity
                    options.EnableTokenCleanup = true;//自动清理token
                });
 
-           
+            services.AddAuthentication("Bearer")
+             .AddIdentityServerAuthentication(options =>
+             {
+                  options.Authority = "http://localhost:5002";//授权服务器地址
+                  options.RequireHttpsMetadata = false;//是否Https
+                  options.ApiName = "blog.core.api";//我们在 Blog.Idp 中配置的资源服务器名
+             });
+
             services.AddAuthentication();//配置认证服务
 
         }
@@ -86,7 +93,7 @@ namespace Kestrel.Identity
             app.UseStaticFiles();
             app.UseRouting();
             app.UseHttpsRedirection();
- 
+
 
 
             app.UseIdentityServer();
