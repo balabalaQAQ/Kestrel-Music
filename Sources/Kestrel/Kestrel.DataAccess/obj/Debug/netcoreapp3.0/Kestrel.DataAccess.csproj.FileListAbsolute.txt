@@ -1,0 +1,13 @@
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel.DataAccess\bin\Debug\netcoreapp3.0\Kestrel.DataAccess.deps.json
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel.DataAccess\bin\Debug\netcoreapp3.0\Kestrel.DataAccess.dll
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel.DataAccess\bin\Debug\netcoreapp3.0\Kestrel.DataAccess.pdb
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel.DataAccess\bin\Debug\netcoreapp3.0\Kestrel.EntityModel.dll
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel.DataAccess\bin\Debug\netcoreapp3.0\Kestrel.ORM.dll
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel.DataAccess\bin\Debug\netcoreapp3.0\Kestrel.EntityModel.pdb
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel.DataAccess\bin\Debug\netcoreapp3.0\Kestrel.ORM.pdb
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel.DataAccess\obj\Debug\netcoreapp3.0\Kestrel.DataAccess.csprojAssemblyReference.cache
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel.DataAccess\obj\Debug\netcoreapp3.0\Kestrel.DataAccess.AssemblyInfoInputs.cache
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel.DataAccess\obj\Debug\netcoreapp3.0\Kestrel.DataAccess.AssemblyInfo.cs
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel.DataAccess\obj\Debug\netcoreapp3.0\Kestrel.DataAccess.csproj.CopyComplete
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel.DataAccess\obj\Debug\netcoreapp3.0\Kestrel.DataAccess.dll
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel.DataAccess\obj\Debug\netcoreapp3.0\Kestrel.DataAccess.pdb

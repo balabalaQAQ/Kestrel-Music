@@ -103,7 +103,7 @@ namespace IdentityServer4.Quickstart.UI
                 var user = await _userManager.FindByNameAsync(model.Username);
 
 
-                if (!user.tdIsDelete)
+                if (!user.TdIsDelete)
                 {
                     var result = await _signInManager.PasswordSignInAsync(model.Username, model.Password, model.RememberLogin, lockoutOnFailure: true);
                     if (result.Succeeded)
@@ -403,7 +403,7 @@ namespace IdentityServer4.Quickstart.UI
                 var user = await _userManager.FindByNameAsync(model.Username);
 
 
-                if (!user.tdIsDelete)
+                if (!user.TdIsDelete)
                 {
                     var result = await _signInManager.PasswordSignInAsync(model.Username, model.Password, model.RememberLogin, lockoutOnFailure: true);
                     if (result.Succeeded)

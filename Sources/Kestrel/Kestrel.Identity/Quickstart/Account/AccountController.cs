@@ -103,7 +103,7 @@ namespace IdentityServer4.Quickstart.UI
                 var user = await _userManager.FindByNameAsync(model.Username);
 
 
-                if (!user.tdIsDelete)
+                if (!user.TdIsDelete)
                 {
                     var result = await _signInManager.PasswordSignInAsync(model.Username, model.Password, model.RememberLogin, lockoutOnFailure: true);
                     if (result.Succeeded)
@@ -578,11 +578,11 @@ namespace IdentityServer4.Quickstart.UI
                         Email = model.Email,
                         UserName = model.LoginName,
                         LoginName = model.RealName,
-                        sex = model.Sex,
-                        age = model.Birth.Year - DateTime.Now.Year,
-                        birth = model.Birth,
-                        addr = "",
-                        tdIsDelete = false
+                        Sex = model.Sex,
+                        Age = model.Birth.Year - DateTime.Now.Year,
+                        Birth = model.Birth,
+                        Addr = "",
+                        TdIsDelete = false
                     };
 
 
@@ -627,7 +627,7 @@ namespace IdentityServer4.Quickstart.UI
         public IActionResult Users(string returnUrl = null)
         {
             ViewData["ReturnUrl"] = returnUrl;
-            var users = _userManager.Users.Where(d => !d.tdIsDelete).OrderBy(d => d.UserName).ToList();
+            var users = _userManager.Users.Where(d => !d.TdIsDelete).OrderBy(d => d.UserName).ToList();
 
             return View(users);
         }
@@ -712,7 +712,7 @@ namespace IdentityServer4.Quickstart.UI
 
                 if (userItem != null)
                 {
-                    userItem.tdIsDelete = true;
+                    userItem.TdIsDelete = true;
 
 
                     result = await _userManager.UpdateAsync(userItem);

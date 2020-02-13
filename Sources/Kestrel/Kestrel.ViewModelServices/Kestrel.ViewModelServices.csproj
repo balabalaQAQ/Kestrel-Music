@@ -1,14 +1,18 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Kestrel.DataAccess\Kestrel.DataAccess.csproj" />
     <ProjectReference Include="..\Kestrel.EntityModel\Kestrel.EntityModel.csproj" />
     <ProjectReference Include="..\Kestrel.ViewModel\Kestrel.ViewModel.csproj" />
-    <ProjectReference Include="..\ViewModel\Kestrel.ViewModel.csproj" />
+    
   </ItemGroup>
 
 </Project>

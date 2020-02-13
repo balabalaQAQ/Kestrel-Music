@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {
+    ".NETCoreApp,Version=v3.0": {
       "Microsoft.AspNetCore.Cryptography.Internal/3.0.0": {
         "type": "package",
         "compile": {
@@ -1295,7 +1295,7 @@
       },
       "Kestrel.DataAccess/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
+        "framework": ".NETCoreApp,Version=v3.0",
         "dependencies": {
           "Kestrel.EntityModel": "1.0.0",
           "Kestrel.ORM": "1.0.0"
@@ -1335,7 +1335,7 @@
       },
       "Kestrel.ViewModel/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
+        "framework": ".NETCoreApp,Version=v3.0",
         "dependencies": {
           "Kestrel.EntityModel": "1.0.0",
           "Newtonsoft.Json": "11.0.2"
@@ -5040,7 +5040,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": [
+    ".NETCoreApp,Version=v3.0": [
       "Kestrel.DataAccess >= 1.0.0",
       "Kestrel.EntityModel >= 1.0.0",
       "Kestrel.ViewModel >= 1.0.0"
@@ -5067,14 +5067,14 @@
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "netcoreapp3.1"
+        "netcoreapp3.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "netcoreapp3.1": {
+        "netcoreapp3.0": {
           "projectReferences": {
             "G:\\程序\\ASP.Net Core\\Kestrel-Music\\Sources\\Kestrel\\Kestrel.DataAccess\\Kestrel.DataAccess.csproj": {
               "projectPath": "G:\\程序\\ASP.Net Core\\Kestrel-Music\\Sources\\Kestrel\\Kestrel.DataAccess\\Kestrel.DataAccess.csproj"
@@ -5084,9 +5084,6 @@
             },
             "G:\\程序\\ASP.Net Core\\Kestrel-Music\\Sources\\Kestrel\\Kestrel.ViewModel\\Kestrel.ViewModel.csproj": {
               "projectPath": "G:\\程序\\ASP.Net Core\\Kestrel-Music\\Sources\\Kestrel\\Kestrel.ViewModel\\Kestrel.ViewModel.csproj"
-            },
-            "G:\\程序\\ASP.Net Core\\Kestrel-Music\\Sources\\Kestrel\\ViewModel\\Kestrel.ViewModel.csproj": {
-              "projectPath": "G:\\程序\\ASP.Net Core\\Kestrel-Music\\Sources\\Kestrel\\ViewModel\\Kestrel.ViewModel.csproj"
             }
           }
         }
@@ -5098,7 +5095,7 @@
       }
     },
     "frameworks": {
-      "netcoreapp3.1": {
+      "netcoreapp3.0": {
         "imports": [
           "net461",
           "net462",
@@ -5109,6 +5106,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[3.0.1, 3.0.1]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"

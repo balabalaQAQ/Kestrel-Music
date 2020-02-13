@@ -5,7 +5,7 @@ using System.Collections.Generic;
 namespace Kestrel.IdentityServer.Models
 {
     // Add profile data for application roles by adding properties to the ApplicationRole class
-    public class ApplicationRole : IdentityRole<int>
+    public class ApplicationRole : IdentityRole<Guid>
     {
 
         public bool IsDeleted { get; set; }
@@ -21,7 +21,7 @@ namespace Kestrel.IdentityServer.Models
         /// <summary>
         /// 创建ID
         /// </summary>
-        public int? CreateId { get; set; }
+        public Guid? CreateId { get; set; }
         /// <summary>
         /// 创建者
         /// </summary>
@@ -33,7 +33,7 @@ namespace Kestrel.IdentityServer.Models
         /// <summary>
         /// 修改ID
         /// </summary>
-        public int? ModifyId { get; set; }
+        public Guid? ModifyId { get; set; }
         /// <summary>
         /// 修改者
         /// </summary>
@@ -42,6 +42,8 @@ namespace Kestrel.IdentityServer.Models
         /// 修改时间
         /// </summary>
         public DateTime? ModifyTime { get; set; } = DateTime.Now;
-        public ICollection<ApplicationUserRole> UserRoles { get; set; }
+
+  
+        public ICollection<ApplicationUserRole> UserRoles{ get; set; }
     }
 }

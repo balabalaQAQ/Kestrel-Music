@@ -34,8 +34,8 @@ namespace IdentityServer4.Quickstart.UI
         {
             // if the TestUserStore is not in DI, then we'll just use the global users collection
             // this is where you would plug in your own custom identity management library (e.g. ASP.NET Identity)
-           
 
+            _users = users;
             _interaction = interaction;
             _clientStore = clientStore;
             _events = events;
