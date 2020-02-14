@@ -51,7 +51,16 @@ namespace Kestrel.WebApi
                options.Audience = "music_api";
            });
 
-
+            // 添加跨域数据访问服务
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AnyOrigin", builder =>
+                {
+                    builder.AllowAnyOrigin()
+                        .AllowAnyHeader()
+                        .AllowAnyMethod();
+                });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -61,6 +70,8 @@ namespace Kestrel.WebApi
             {
                 app.UseDeveloperExceptionPage();
             }
+            // 允许跨域访问请求
+            app.UseCors("AnyOrigin");
             app.UseDefaultFiles();
             app.UseHttpsRedirection();
 

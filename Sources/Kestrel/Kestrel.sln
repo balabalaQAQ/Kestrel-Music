@@ -17,8 +17,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Kestrel03.DataAccess", "Kes
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kestrel.DataAccess", "Kestrel.DataAccess\Kestrel.DataAccess.csproj", "{FB081FA4-E952-4538-9A24-D2283CB05C4F}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Kestrel.IdentityServer4.EntityFramework", "Kestrel.IdentityServer4.EntityFramework", "{6063A996-BBFA-46EB-82D4-E6C0D932A740}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Kestrel04.02.实体模型与远程数据模型映射服务", "Kestrel04.02.实体模型与远程数据模型映射服务", "{197EB900-69D6-4AF7-8567-9B40F81D186F}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kestrel.ViewModelServices", "Kestrel.ViewModelServices\Kestrel.ViewModelServices.csproj", "{1BCFAF0C-1498-497C-AD5A-15994A53DFD3}"

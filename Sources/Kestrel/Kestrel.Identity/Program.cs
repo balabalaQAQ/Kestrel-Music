@@ -16,8 +16,8 @@ namespace Kestrel.Identity
         public static   void Main(string[] args)
         {
             var host = CreateHostBuilder(args).Build();
-            
-
+            //种子数据
+            //  DataSeed.EnsureSeedData(host.Services);
             host.Run();
 
 
