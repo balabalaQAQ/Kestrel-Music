@@ -36,7 +36,7 @@ namespace Kestrel.WebApi
 
 
             builder.AddDeveloperSigningCredential();//Text◊®”√
-            services.AddDbContext<KestrelDbcontext>(opt => opt.UseSqlServer("Server=localhost;Initial Catalog=KestrelSystemData; uid=sa;pwd=123456;MultipleActiveResultSets=True"));
+            services.AddDbContext<KestrelDbcontext>(opt => opt.UseSqlServer("Server=localhost;Initial Catalog=KestrelMusicData; uid=sa;pwd=123456;MultipleActiveResultSets=True"));
             services.AddMvcCore().AddAuthorization();
             //   ÃÌº” DI ≈‰÷√
 

@@ -17,8 +17,6 @@ namespace Kestrel.EntityModel.Music
         [StringLength(500)]
         public string Description { get ; set; }
         public string SortCode { get; set; }
-        public bool IsPseudoDelete { get; set; }
-
-      
+        public bool IsPseudoDelete { get; set; }     
     }
 }

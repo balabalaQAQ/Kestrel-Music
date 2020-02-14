@@ -21,4 +21,3 @@ G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel.EntityModel\obj\Deb
 G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel.EntityModel\obj\Debug\netcoreapp3.0\Kestrel.EntityModel.AssemblyInfo.cs
 G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel.EntityModel\obj\Debug\netcoreapp3.0\Kestrel.EntityModel.dll
 G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel.EntityModel\obj\Debug\netcoreapp3.0\Kestrel.EntityModel.pdb
-G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel.EntityModel\obj\Debug\netcoreapp3.0\Kestrel.EntityModel.csprojAssemblyReference.cache

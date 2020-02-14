@@ -1,5 +1,5 @@
 ﻿using Kestrel.EntityModel.Music;
-using Kestrel.EntityModel.Users;
+using Kestrel.EntityModel.KestrelMusicUser;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
@@ -7,12 +7,12 @@ using System;
 
 namespace Kestrel.ORM
 {
-    public class KestrelDbcontext:IdentityDbContext<IdentityUser<Guid>,IdentityRole<Guid>,Guid>
+    public class KestrelDbcontext : DbContext
+
     {
-        public KestrelDbcontext(DbContextOptions<KestrelDbcontext> options) : base(options) { }
 
         #region 用户角色实体
-       // public DbSet<User> User { get; set; }
+        public DbSet<KestrelMusicUser> KestrelMusicUser { get; set; }
         #endregion
 
         #region 音乐相关实体

@@ -1,0 +1,3 @@
+Add-Migration -Name "KestrelMusicData" -Project "Kestrel.ORM" -c "KestrelDbcontext" -StartupProject "Kestrel.WebApi"
+
+update-database -c KestrelDbcontext

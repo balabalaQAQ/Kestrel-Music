@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Kestrel.EntityModel.KestrelMusicUser;
+using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
 
@@ -25,5 +26,7 @@ namespace Kestrel.IdentityServer.Models
 
        
         public ICollection<ApplicationUserRole> UserRoles { get; set; }
+
+        public virtual KestrelMusicUser MusicUser { get; set; }
     }
 }

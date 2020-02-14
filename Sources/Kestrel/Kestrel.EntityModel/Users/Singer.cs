@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Kestrel.EntityModel.Users
+namespace Kestrel.EntityModel.KestrelMusicUser
 {
     //歌手 
     public class Singer

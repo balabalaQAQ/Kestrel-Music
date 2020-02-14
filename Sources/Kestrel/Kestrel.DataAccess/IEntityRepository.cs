@@ -1,7 +1,7 @@
 ﻿using Kestrel.DataAccess.Tools;
 using Kestrel.EntityModel.Attachments;
 using Kestrel.EntityModel.Ffoundation;
-using Kestrel.EntityModel.Users;
+using Kestrel.EntityModel.KestrelMusicUser;
 using Kestrel.ORM;
 using Microsoft.AspNetCore.Identity;
 using System;
@@ -15,7 +15,7 @@ namespace Kestrel.DataAccess
     public interface IEntityRepository<T> where T : class, IEntityBase, new()
     {
         KestrelDbcontext EntitiesContext { get; }
-        UserManager<User> ApplicationUserManager { get; }
+        UserManager<KestrelMusicUser> ApplicationUserManager { get; }
        // RoleManager<Roles> ApplicationRoleManager { get; }
 
         #region 1.获取指定类型实体数据对象数量的方法，2个重载

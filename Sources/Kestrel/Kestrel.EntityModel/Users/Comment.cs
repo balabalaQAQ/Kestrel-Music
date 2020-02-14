@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Kestrel.EntityModel.Users
+namespace Kestrel.EntityModel.KestrelMusicUser
 {
     //评论
     public class Comment : IEntity

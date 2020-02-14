@@ -3,12 +3,11 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Kestrel.EntityModel.Users
+namespace Kestrel.EntityModel.KestrelMusicUser
 {
   public  class Author:IEntity
     {
         public Guid ID { get; set; }
-        
         //作者名称
         public string Name { get; set; }
         //作者简介

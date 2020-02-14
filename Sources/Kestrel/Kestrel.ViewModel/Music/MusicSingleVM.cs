@@ -1,7 +1,7 @@
 ﻿using Kestrel.EntityModel.Attachments;
 using Kestrel.EntityModel.Ffoundation;
 using Kestrel.EntityModel.Music;
-using Kestrel.EntityModel.Users;
+using Kestrel.EntityModel.KestrelMusicUser;
 using System;
 using System.Collections.Generic;
 using System.Text;

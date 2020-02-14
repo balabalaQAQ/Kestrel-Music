@@ -3,7 +3,7 @@
 using Kestrel.EntityModel.Attachments;
 using Kestrel.EntityModel.Ffoundation;
 using Kestrel.EntityModel.Tools;
-using Kestrel.EntityModel.Users;
+using Kestrel.EntityModel.KestrelMusicUser;
 using Kestrel.ORM;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -23,12 +23,12 @@ namespace Kestrel.DataAccess
         public class EntityRepository<T> : IEntityRepository<T> where T : class, IEntityBase, new()
         {
             private readonly KestrelDbcontext _entitiesContext;               // 数据映射
-            private readonly UserManager<User> _userManager;  // 用户管理，统一在这里注入，方便后续应用中直接处理
+            private readonly UserManager<KestrelMusicUser> _userManager;  // 用户管理，统一在这里注入，方便后续应用中直接处理
           //  private readonly RoleManager<Roles> _roleManager;  // 角色管理
 
             // 以下公开的三个只读属性，是为了方便扩展 IEntityRepository<T> 方法时候使用的
             public KestrelDbcontext EntitiesContext { get { return _entitiesContext; } }
-            public UserManager<User> ApplicationUserManager { get { return _userManager; } }
+            public UserManager<KestrelMusicUser> ApplicationUserManager { get { return _userManager; } }
             //  public RoleManager<Roles> ApplicationRoleManager { get { return _roleManager; } }
 
             /// <summary>
@@ -37,7 +37,7 @@ namespace Kestrel.DataAccess
             /// <param name="context"></param>
             /// <param name="userManager"></param>
             /// <param name="roleManager"></param>
-            public EntityRepository(KestrelDbcontext context, UserManager<User> userManager )
+            public EntityRepository(KestrelDbcontext context, UserManager<KestrelMusicUser> userManager )
             {
                 _entitiesContext = context;
                 _userManager = userManager;

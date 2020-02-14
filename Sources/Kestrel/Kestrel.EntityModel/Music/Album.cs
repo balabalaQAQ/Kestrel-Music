@@ -1,5 +1,5 @@
 ﻿using Kestrel.EntityModel.Ffoundation;
-using Kestrel.EntityModel.Users;
+using Kestrel.EntityModel.KestrelMusicUser;
 using System;
 using System.ComponentModel.DataAnnotations;
 

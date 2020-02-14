@@ -28,6 +28,7 @@
           "IdentityServer4.AccessTokenValidation": "3.0.0",
           "IdentityServer4.AspNetIdentity": "3.0.0",
           "IdentityServer4.EntityFramework": "3.0.0",
+          "Kestrel.EntityModel": "1.0.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "3.0.0",
           "Microsoft.AspNetCore.Mvc.Core": "2.2.0",
           "Microsoft.EntityFrameworkCore": "3.0.0",
@@ -1628,6 +1629,14 @@
           "System.Threading": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0",
           "System.Xml.XmlDocument": "4.3.0"
+        }
+      },
+      "Kestrel.EntityModel/1.0.0": {
+        "runtime": {
+          "Kestrel.EntityModel.dll": {}
+        },
+        "compile": {
+          "Kestrel.EntityModel.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/3.0.0.0": {
@@ -4302,6 +4311,11 @@
       "sha512": "sha512-MYoTCP7EZ98RrANESW05J5ZwskKDoN0AuZ06ZflnowE50LTpbR5yRg3tHckTVm5j/m47stuGgCrCHWePyHS70Q==",
       "path": "system.xml.xmlserializer/4.3.0",
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    },
+    "Kestrel.EntityModel/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Microsoft.AspNetCore.Antiforgery/3.0.0.0": {
       "type": "referenceassembly",
