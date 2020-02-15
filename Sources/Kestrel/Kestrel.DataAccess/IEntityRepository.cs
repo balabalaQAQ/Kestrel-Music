@@ -1,7 +1,7 @@
 ﻿using Kestrel.DataAccess.Tools;
 using Kestrel.EntityModel.Attachments;
 using Kestrel.EntityModel.Ffoundation;
-using Kestrel.EntityModel.KestrelMusicUser;
+using Kestrel.EntityModel.Users;
 using Kestrel.ORM;
 using Microsoft.AspNetCore.Identity;
 using System;
@@ -12,11 +12,26 @@ using System.Threading.Tasks;
 
 namespace Kestrel.DataAccess
 {
+    /// <summary>
+    /// 通用的数据持久层访问处理接口定义：
+    ///   1.获取指定类型实体数据对象数量的方法，2个重载；
+    ///   2.常规获取指定类型 T 单个实体对象的方法，4个重载；
+    ///   3.常规的获取指定的类型 T 实体对象集合的方法，5 个重载；
+    ///   4.使用单页数据传输处理模型 ListSinglePageParameter 获取指定类型的 T 的实体对象集合的方法，3个重载；
+    ///   5.直接指定分页参数，获取指定类型 T 实体对象分页后的单页数据集合 <see cref="PaginatedList{T}" />，3个重载；
+    ///   6.使用分页数据传输模型 ListPageParameter 获取指定型 T 实体对象分页后的单页数据集合 <see cref="PaginatedList{T}" />，4个重载
+    ///   7.获取指定类型实体对象个数的方法，2个重载
+    ///   8.获取指定类型 TOther 单个实体对象的方法，4个重载；
+    ///   9.获取指定类型 TOther 实体对象集合的方法，3个重载；
+    ///   10.获取和普通文件、图片、头像、视频文件相关的方法；
+    ///   11.判断是否存在指定条件的对象的方法，2个重载；
+    ///   12.持久化（保存、删除）实体对象的方法
+    /// </summary>
     public interface IEntityRepository<T> where T : class, IEntityBase, new()
     {
         KestrelDbcontext EntitiesContext { get; }
         UserManager<KestrelMusicUser> ApplicationUserManager { get; }
-       // RoleManager<Roles> ApplicationRoleManager { get; }
+        RoleManager<Role> ApplicationRoleManager { get; }
 
         #region 1.获取指定类型实体数据对象数量的方法，2个重载
         /// <summary>

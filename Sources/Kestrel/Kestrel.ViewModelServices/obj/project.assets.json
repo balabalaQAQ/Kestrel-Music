@@ -1298,7 +1298,8 @@
         "framework": ".NETCoreApp,Version=v3.0",
         "dependencies": {
           "Kestrel.EntityModel": "1.0.0",
-          "Kestrel.ORM": "1.0.0"
+          "Kestrel.ORM": "1.0.0",
+          "Newtonsoft.Json": "11.0.2"
         },
         "compile": {
           "bin/placeholder/Kestrel.DataAccess.dll": {}
@@ -1337,6 +1338,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.0",
         "dependencies": {
+          "Kestrel.DataAccess": "1.0.0",
           "Kestrel.EntityModel": "1.0.0",
           "Newtonsoft.Json": "11.0.2"
         },
@@ -5043,7 +5045,10 @@
     ".NETCoreApp,Version=v3.0": [
       "Kestrel.DataAccess >= 1.0.0",
       "Kestrel.EntityModel >= 1.0.0",
-      "Kestrel.ViewModel >= 1.0.0"
+      "Kestrel.ViewModel >= 1.0.0",
+      "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 3.0.0",
+      "Microsoft.EntityFrameworkCore >= 3.0.0",
+      "Newtonsoft.Json >= 11.0.2"
     ]
   },
   "packageFolders": {
@@ -5096,6 +5101,20 @@
     },
     "frameworks": {
       "netcoreapp3.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[3.0.0, )"
+          },
+          "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[3.0.0, )"
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[11.0.2, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace ViewModel.ControlModels
+namespace Kestrel.ViewModels.ControlModels
 {
     /// <summary>
     /// 适用于 BootTreeView 的树节点模型：https://github.com/jonmiles/bootstrap-treeview

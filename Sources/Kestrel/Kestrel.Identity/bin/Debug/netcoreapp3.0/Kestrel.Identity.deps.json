@@ -29,6 +29,7 @@
           "IdentityServer4.AspNetIdentity": "3.0.0",
           "IdentityServer4.EntityFramework": "3.0.0",
           "Kestrel.EntityModel": "1.0.0",
+          "Kestrel.ORM": "1.0.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "3.0.0",
           "Microsoft.AspNetCore.Mvc.Core": "2.2.0",
           "Microsoft.EntityFrameworkCore": "3.0.0",
@@ -1637,6 +1638,20 @@
         },
         "compile": {
           "Kestrel.EntityModel.dll": {}
+        }
+      },
+      "Kestrel.ORM/1.0.0": {
+        "dependencies": {
+          "Kestrel.EntityModel": "1.0.0",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "3.0.0",
+          "Microsoft.EntityFrameworkCore": "3.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "3.0.0"
+        },
+        "runtime": {
+          "Kestrel.ORM.dll": {}
+        },
+        "compile": {
+          "Kestrel.ORM.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/3.0.0.0": {
@@ -4313,6 +4328,11 @@
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
     },
     "Kestrel.EntityModel/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Kestrel.ORM/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

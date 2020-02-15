@@ -1,5 +1,5 @@
 ﻿using Kestrel.EntityModel.Ffoundation;
-using Kestrel.EntityModel.KestrelMusicUser;
+
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -7,8 +7,10 @@ using System.Text;
 
 namespace Kestrel.EntityModel.Music
 {
-     //电台
-     public class RadioStation:IEntity
+    /// <summary>
+    /// 电台
+    /// </summary>
+    public class RadioStation:IEntity
     {
         [Key]
         public Guid ID { get; set; }
@@ -28,6 +30,6 @@ namespace Kestrel.EntityModel.Music
         //类别
         public virtual AlbumGenre AlbumGenre { get; set; }
 
-        public virtual MusicOther MusicOther { get; set; }
+      
     }
 }

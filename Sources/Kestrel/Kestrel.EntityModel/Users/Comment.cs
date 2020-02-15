@@ -4,9 +4,12 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Kestrel.EntityModel.KestrelMusicUser
+namespace Kestrel.EntityModel.Users
 {
-    //评论
+    /// <summary>
+    ///  评论
+    /// </summary>
+
     public class Comment : IEntity
     {
         public string Name { get; set; }

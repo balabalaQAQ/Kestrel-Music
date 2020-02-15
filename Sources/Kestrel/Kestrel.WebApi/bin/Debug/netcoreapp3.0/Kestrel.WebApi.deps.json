@@ -11,7 +11,7 @@
       "NETCOREAPP3_0"
     ],
     "languageVersion": "",
-    "platform": "x86",
+    "platform": "AnyCPU",
     "allowUnsafe": false,
     "warningsAsErrors": false,
     "optimize": false,
@@ -26,13 +26,17 @@
         "dependencies": {
           "IdentityServer4": "3.0.0",
           "IdentityServer4.Storage": "3.0.0",
+          "Kestrel.DataAccess": "1.0.0",
           "Kestrel.EntityModel": "1.0.0",
           "Kestrel.ORM": "1.0.0",
+          "Kestrel.ViewModelServices": "1.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "3.0.0",
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "3.0.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "3.0.0",
           "Microsoft.AspNetCore.Identity.UI": "3.0.0",
+          "Microsoft.EntityFrameworkCore": "3.0.0",
           "Microsoft.EntityFrameworkCore.Design": "3.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "3.0.0",
           "Microsoft.EntityFrameworkCore.Tools": "3.0.0",
           "Microsoft.Extensions.Logging.Debug": "3.0.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "3.0.0",
@@ -2061,6 +2065,19 @@
           "lib/netstandard2.1/Z.Expressions.Eval.dll": {}
         }
       },
+      "Kestrel.DataAccess/1.0.0": {
+        "dependencies": {
+          "Kestrel.EntityModel": "1.0.0",
+          "Kestrel.ORM": "1.0.0",
+          "Newtonsoft.Json": "12.0.2"
+        },
+        "runtime": {
+          "Kestrel.DataAccess.dll": {}
+        },
+        "compile": {
+          "Kestrel.DataAccess.dll": {}
+        }
+      },
       "Kestrel.EntityModel/1.0.0": {
         "runtime": {
           "Kestrel.EntityModel.dll": {}
@@ -2081,6 +2098,35 @@
         },
         "compile": {
           "Kestrel.ORM.dll": {}
+        }
+      },
+      "Kestrel.ViewModel/1.0.0": {
+        "dependencies": {
+          "Kestrel.DataAccess": "1.0.0",
+          "Kestrel.EntityModel": "1.0.0",
+          "Newtonsoft.Json": "12.0.2"
+        },
+        "runtime": {
+          "Kestrel.ViewModel.dll": {}
+        },
+        "compile": {
+          "Kestrel.ViewModel.dll": {}
+        }
+      },
+      "Kestrel.ViewModelServices/1.0.0": {
+        "dependencies": {
+          "Kestrel.DataAccess": "1.0.0",
+          "Kestrel.EntityModel": "1.0.0",
+          "Kestrel.ViewModel": "1.0.0",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "3.0.0",
+          "Microsoft.EntityFrameworkCore": "3.0.0",
+          "Newtonsoft.Json": "12.0.2"
+        },
+        "runtime": {
+          "Kestrel.ViewModelServices.dll": {}
+        },
+        "compile": {
+          "Kestrel.ViewModelServices.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/3.0.0.0": {
@@ -4826,12 +4872,27 @@
       "path": "z.expressions.eval/3.1.2",
       "hashPath": "z.expressions.eval.3.1.2.nupkg.sha512"
     },
+    "Kestrel.DataAccess/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "Kestrel.EntityModel/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
     "Kestrel.ORM/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Kestrel.ViewModel/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Kestrel.ViewModelServices/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

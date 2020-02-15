@@ -1,19 +1,20 @@
-﻿using System;
+﻿using Kestrel.EntityModel.Ffoundation;
+using Kestrel.EntityModel.Music;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Kestrel.EntityModel.KestrelMusicUser
+namespace Kestrel.EntityModel.Users
 {
-    //歌手 
-    public class Singer
+    /// <summary>
+    /// 歌手
+    /// </summary>
+    public class Singer:Entity
     {
-        public Guid ID { get; set; }
-
-        //作者名称
-        public string Name { get; set; }
-        //作者简介
-        public string Description { get; set; }
-        public string SortCode { get; set; }
-        public bool IsPseudoDelete { get; set; }
+        //所著歌
+        public virtual ICollection<MusicSingle> MusicSingles { get; set; }
+   
+        public virtual ICollection<SongSheet> SongSheets { get; set; }
+      
     }
 }

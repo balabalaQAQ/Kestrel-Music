@@ -13,6 +13,14 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
 using Kestrel.Identity;
+using Kestrel.DataAccess;
+using Kestrel.EntityModel.Users;
+using Kestrel.ViewModelServices;
+using Kestrel.ViewModel.UserVM;
+using Kestrel.EntityModel.Music;
+using ViewModel.MusicVM;
+using Kestrel.ViewModel.MusicVM;
+using Microsoft.AspNetCore.Identity;
 
 namespace Kestrel.WebApi
 {
@@ -28,29 +36,22 @@ namespace Kestrel.WebApi
         // This method gets called by the runtime. Use this method to add services to the container.UseSqlServer
         public void ConfigureServices(IServiceCollection services)
         {
-         
-            var builder = services.AddIdentityServer()
-             .AddTestUsers(Config.User)
-            .AddInMemoryApiResources(Config.GetApis())
-            .AddInMemoryClients(Config.GetClients());
 
 
-            builder.AddDeveloperSigningCredential();//Text专用
-            services.AddDbContext<KestrelDbcontext>(opt => opt.UseSqlServer("Server=localhost;Initial Catalog=KestrelMusicData; uid=sa;pwd=123456;MultipleActiveResultSets=True"));
-            services.AddMvcCore().AddAuthorization();
-            //   添加 DI 配置
-
-            services.AddControllers();
+            services.AddDbContext<KestrelDbcontext>(opt => 
+            opt.UseSqlServer("Server=localhost;Initial Catalog=KestrelMusicData; uid=sa;pwd=123456;MultipleActiveResultSets=True"));
+       
+            services.AddMvcCore().AddAuthorization(); 
+       
 
             services.AddAuthentication("Bearer")
            .AddJwtBearer("Bearer", options =>
            {
                options.Authority = "http://localhost:5000";
                options.RequireHttpsMetadata = false;    
-
                options.Audience = "music_api";
            });
-
+           
             // 添加跨域数据访问服务
             services.AddCors(options =>
             {
@@ -61,6 +62,22 @@ namespace Kestrel.WebApi
                         .AllowAnyMethod();
                 });
             });
+
+
+            // 添加 DI 配置
+            //KestrelMusic用户
+            services.AddScoped<IEntityRepository<KestrelMusicUser>, EntityRepository<KestrelMusicUser>>();
+            services.AddScoped<IWebAPIModelService<KestrelMusicUser, KestrelMusicUserVM>, WebAPIModelService<KestrelMusicUser, KestrelMusicUserVM>>();
+
+            //歌曲、单曲
+            services.AddScoped<IEntityRepository<MusicSingle>, EntityRepository<MusicSingle>>();
+            services.AddScoped<IWebAPIModelService<MusicSingle, MusicSingleVM>, WebAPIModelService<MusicSingle, MusicSingleVM>>();
+
+            //歌单
+            services.AddScoped<IEntityRepository<SongSheet>, EntityRepository<SongSheet>>();
+            services.AddScoped<IWebAPIModelService<SongSheet, SongSheetVM>, WebAPIModelService<SongSheet, SongSheetVM>>();
+
+            services.AddControllers();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

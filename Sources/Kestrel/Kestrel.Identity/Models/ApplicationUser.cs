@@ -1,4 +1,5 @@
-﻿using Kestrel.EntityModel.KestrelMusicUser;
+﻿
+using Kestrel.EntityModel.Users;
 using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;

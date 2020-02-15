@@ -1,20 +1,31 @@
-﻿using Kestrel.EntityModel.Ffoundation;
+﻿
+using Kestrel.EntityModel.Attachments;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Text;
 
-namespace Kestrel.EntityModel.Music
+namespace Kestrel.EntityModel.Ffoundation
 {
-    //音乐的拓展功能
-    public class MusicOther : IEntity
+    public class MusicEntity : IMusicEntity
     {
+     
+        [Key]
         public Guid ID { get; set; }
-        //名字
+        [StringLength(100)]
         public string Name { get; set; }
+        [StringLength(500)]
         public string Description { get; set; }
+        [StringLength(100)]
         public string SortCode { get; set; }
         public bool IsPseudoDelete { get; set; }
 
+        //创建时间
+        public DateTime CreatTime { get; set; }
+
+
+        //封面、音乐图片
+        public virtual ICollection<BusinessImage> MusicImage { get; set; }
 
         //累计播放次数
         public int AddPlay { get; set; }

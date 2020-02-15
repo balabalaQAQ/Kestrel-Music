@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ViewModel.ControlModels
+namespace Kestrel.ViewModels.ControlModels
 {
     /// <summary>
     /// 具备自我引用的节点构造模型

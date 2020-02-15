@@ -3,7 +3,7 @@
 using Kestrel.EntityModel.Attachments;
 using Kestrel.EntityModel.Ffoundation;
 using Kestrel.EntityModel.Tools;
-using Kestrel.EntityModel.KestrelMusicUser;
+using Kestrel.EntityModel.Users;
 using Kestrel.ORM;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -24,12 +24,12 @@ namespace Kestrel.DataAccess
         {
             private readonly KestrelDbcontext _entitiesContext;               // 数据映射
             private readonly UserManager<KestrelMusicUser> _userManager;  // 用户管理，统一在这里注入，方便后续应用中直接处理
-          //  private readonly RoleManager<Roles> _roleManager;  // 角色管理
+            private readonly RoleManager<Role> _roleManager;  // 角色管理
 
             // 以下公开的三个只读属性，是为了方便扩展 IEntityRepository<T> 方法时候使用的
             public KestrelDbcontext EntitiesContext { get { return _entitiesContext; } }
             public UserManager<KestrelMusicUser> ApplicationUserManager { get { return _userManager; } }
-            //  public RoleManager<Roles> ApplicationRoleManager { get { return _roleManager; } }
+            public RoleManager<Role> ApplicationRoleManager { get { return _roleManager; } }
 
             /// <summary>
             /// 构造函数，负责相关参数的注入和初始化几个基本参数
@@ -37,11 +37,11 @@ namespace Kestrel.DataAccess
             /// <param name="context"></param>
             /// <param name="userManager"></param>
             /// <param name="roleManager"></param>
-            public EntityRepository(KestrelDbcontext context, UserManager<KestrelMusicUser> userManager )
+            public EntityRepository(KestrelDbcontext context, UserManager<KestrelMusicUser> userManager, RoleManager<Role> roleManager )
             {
                 _entitiesContext = context;
                 _userManager = userManager;
-              
+                _roleManager = roleManager;
             }
 
             #region 1.获取指定类型实体数据对象数量的方法，2个重载

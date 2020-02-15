@@ -5,8 +5,10 @@ using System.Text;
 
 namespace Kestrel.EntityModel.Other
 {
-    //版权
-   public class Copyright:IEntity
+    /// <summary>
+    /// 版权
+    /// </summary>
+    public class Copyright:IEntity
     {
         public Guid ID { get; set; }
         //名字

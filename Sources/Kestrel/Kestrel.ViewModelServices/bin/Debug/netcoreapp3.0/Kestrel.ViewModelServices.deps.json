@@ -10,7 +10,10 @@
         "dependencies": {
           "Kestrel.DataAccess": "1.0.0",
           "Kestrel.EntityModel": "1.0.0",
-          "Kestrel.ViewModel": "1.0.0"
+          "Kestrel.ViewModel": "1.0.0",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "3.0.0",
+          "Microsoft.EntityFrameworkCore": "3.0.0",
+          "Newtonsoft.Json": "11.0.2"
         },
         "runtime": {
           "Kestrel.ViewModelServices.dll": {}
@@ -880,7 +883,8 @@
       "Kestrel.DataAccess/1.0.0": {
         "dependencies": {
           "Kestrel.EntityModel": "1.0.0",
-          "Kestrel.ORM": "1.0.0"
+          "Kestrel.ORM": "1.0.0",
+          "Newtonsoft.Json": "11.0.2"
         },
         "runtime": {
           "Kestrel.DataAccess.dll": {}
@@ -904,6 +908,7 @@
       },
       "Kestrel.ViewModel/1.0.0": {
         "dependencies": {
+          "Kestrel.DataAccess": "1.0.0",
           "Kestrel.EntityModel": "1.0.0",
           "Newtonsoft.Json": "11.0.2"
         },

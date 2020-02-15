@@ -6,7 +6,9 @@ using System.Text;
 
 namespace Kestrel.EntityModel.Music
 {
-    //歌曲类别
+    /// <summary>
+    /// 歌曲类别
+    /// </summary>
     public class SongGenre : IEntity
     {
         [Key]
