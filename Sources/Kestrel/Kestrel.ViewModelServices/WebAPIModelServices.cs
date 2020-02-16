@@ -457,46 +457,46 @@ namespace Kestrel.ViewModelServices
 
 
 
-        public virtual async Task<UserOnlineInformationVM> GetUserOnlineInformationVM(string userName)
-        {
-            var userOnlineInformationVM = new UserOnlineInformationVM();
+        //public virtual async Task<UserOnlineInformationVM> GetUserOnlineInformationVM(string userName)
+        //{
+        //    var userOnlineInformationVM = new UserOnlineInformationVM();
 
-            // 1. 获取用户并初始化 userOnlineInformationVM
-            var user = await _entityRepository.ApplicationUserManager.FindByNameAsync(userName);
-            userOnlineInformationVM.Id = user.ID;
-            userOnlineInformationVM.Name = user.Name;
-            userOnlineInformationVM.UserName = user.UserName;
+        //    // 1. 获取用户并初始化 userOnlineInformationVM
+        //    var user = await _entityRepository.ApplicationUserManager.FindByNameAsync(userName);
+        //    userOnlineInformationVM.Id = user.ID;
+        //    userOnlineInformationVM.Name = user.Name;
+        //    userOnlineInformationVM.UserName = user.UserName;
 
-            userOnlineInformationVM.MasterRoleId = "";
-            userOnlineInformationVM.OrganizationId = "";
-            userOnlineInformationVM.DepartmentId = "";
-            userOnlineInformationVM.RoleIemtCollection = new List<UserOnlineInformationVM.RoleItem>();
+        //    userOnlineInformationVM.MasterRoleId = "";
+        //    userOnlineInformationVM.OrganizationId = "";
+        //    userOnlineInformationVM.DepartmentId = "";
+        //    userOnlineInformationVM.RoleIemtCollection = new List<UserOnlineInformationVM.RoleItem>();
 
-            // 2. 获取用户 Claims
-            var userClaimCollection = await _entityRepository.ApplicationUserManager.GetClaimsAsync(user);
-            // 2.1. 处理用户关联的宿主角色数据
-            var roleClaim = userClaimCollection.FirstOrDefault(x => x.Type == "宿主角色组");
-            if (roleClaim != null)
-                userOnlineInformationVM.MasterRoleId = (roleClaim.Value);
-            // 2.2. 处理用户关联的单位数据
-            var organizationClaim = userClaimCollection.FirstOrDefault(x => x.Type == "宿主单位");
-            if (organizationClaim != null)
-                userOnlineInformationVM.OrganizationId = organizationClaim.Value;
-            // 2.3. 处理关联的部门数据
-            var departmentClaim = userClaimCollection.FirstOrDefault(x => x.Type == "宿主部门");
-            if (departmentClaim != null)
-                userOnlineInformationVM.DepartmentId = departmentClaim.Value;
+        //    // 2. 获取用户 Claims
+        //    var userClaimCollection = await _entityRepository.ApplicationUserManager.GetClaimsAsync(user);
+        //    // 2.1. 处理用户关联的宿主角色数据
+        //    var roleClaim = userClaimCollection.FirstOrDefault(x => x.Type == "宿主角色组");
+        //    if (roleClaim != null)
+        //        userOnlineInformationVM.MasterRoleId = (roleClaim.Value);
+        //    // 2.2. 处理用户关联的单位数据
+        //    var organizationClaim = userClaimCollection.FirstOrDefault(x => x.Type == "宿主单位");
+        //    if (organizationClaim != null)
+        //        userOnlineInformationVM.OrganizationId = organizationClaim.Value;
+        //    // 2.3. 处理关联的部门数据
+        //    var departmentClaim = userClaimCollection.FirstOrDefault(x => x.Type == "宿主部门");
+        //    if (departmentClaim != null)
+        //        userOnlineInformationVM.DepartmentId = departmentClaim.Value;
 
-            // 3. 处理关联的角色组
-            var roleNameCollection = await _entityRepository.ApplicationUserManager.GetRolesAsync(user);
-            foreach (var roleName in roleNameCollection)
-            {
-                var role = await _entityRepository.ApplicationRoleManager.FindByNameAsync(roleName);
-                var roleItem = new UserOnlineInformationVM.RoleItem() { RoleID = role.ID, RoleName = role.Name };
-                userOnlineInformationVM.RoleIemtCollection.Add(roleItem);
-            }
+        //    // 3. 处理关联的角色组
+        //    var roleNameCollection = await _entityRepository.ApplicationUserManager.GetRolesAsync(user);
+        //    foreach (var roleName in roleNameCollection)
+        //    {
+        //        var role = await _entityRepository.ApplicationRoleManager.FindByNameAsync(roleName);
+        //        var roleItem = new UserOnlineInformationVM.RoleItem() { RoleID = role.ID, RoleName = role.Name };
+        //        userOnlineInformationVM.RoleIemtCollection.Add(roleItem);
+        //    }
 
-            return userOnlineInformationVM;
-        }
+        //    return userOnlineInformationVM;
+        //}
     }
 }

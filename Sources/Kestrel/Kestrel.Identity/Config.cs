@@ -25,9 +25,8 @@ namespace Kestrel.Identity
 
         public static IEnumerable<ApiResource> GetApiResources()
         {
-            // blog.core 项目
             return new List<ApiResource> {
-                new ApiResource("blog.core.api", "Blog.Core API") {
+                new ApiResource("kestrelmusic API", "KestrelMusic API") {
                     // include the following using claims in access token (in addition to subject id)
                     //requires using using IdentityModel;
                     UserClaims = { JwtClaimTypes.Name, JwtClaimTypes.Role },

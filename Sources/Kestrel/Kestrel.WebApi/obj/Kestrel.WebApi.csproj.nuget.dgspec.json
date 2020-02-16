@@ -114,6 +114,12 @@
       },
       "frameworks": {
         "netcoreapp3.0": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -428,6 +434,10 @@
         "netcoreapp3.0": {
           "dependencies": {
             "IdentityServer4": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "IdentityServer4.AccessTokenValidation": {
               "target": "Package",
               "version": "[3.0.0, )"
             },

@@ -37,21 +37,20 @@ namespace Kestrel.WebApi
         public void ConfigureServices(IServiceCollection services)
         {
 
-
-            services.AddDbContext<KestrelDbcontext>(opt => 
+            services.AddDbContext<KestrelDbcontext>(opt =>
             opt.UseSqlServer("Server=localhost;Initial Catalog=KestrelMusicData; uid=sa;pwd=123456;MultipleActiveResultSets=True"));
-       
-            services.AddMvcCore().AddAuthorization(); 
-       
+
+            services.AddMvcCore().AddAuthorization();
+
 
             services.AddAuthentication("Bearer")
            .AddJwtBearer("Bearer", options =>
            {
                options.Authority = "http://localhost:5000";
-               options.RequireHttpsMetadata = false;    
+               options.RequireHttpsMetadata = false;
                options.Audience = "music_api";
            });
-           
+
             // 添加跨域数据访问服务
             services.AddCors(options =>
             {
@@ -62,6 +61,7 @@ namespace Kestrel.WebApi
                         .AllowAnyMethod();
                 });
             });
+
 
 
             // 添加 DI 配置
@@ -89,21 +89,27 @@ namespace Kestrel.WebApi
             }
             // 允许跨域访问请求
             app.UseCors("AnyOrigin");
+
             app.UseDefaultFiles();
+
+            app.UseStaticFiles();
+
             app.UseHttpsRedirection();
 
             app.UseRouting();
 
-            app.UseIdentityServer();
             app.UseAuthentication();//认证
+
             app.UseAuthorization();//授权
- 
+
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
-             
+
             });
         }
     }
 }
+
+

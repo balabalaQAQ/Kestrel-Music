@@ -7,5 +7,9 @@ namespace Kestrel.EntityModel.Users
 {
   public class Role: Entity
     {
+        public Role() : base()
+        {
+            this.ID = Guid.NewGuid();
+        }
     }
 }

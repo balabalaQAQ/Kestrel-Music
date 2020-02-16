@@ -25,6 +25,7 @@
       "Kestrel.WebApi/1.0.0": {
         "dependencies": {
           "IdentityServer4": "3.0.0",
+          "IdentityServer4.AccessTokenValidation": "3.0.0",
           "IdentityServer4.Storage": "3.0.0",
           "Kestrel.DataAccess": "1.0.0",
           "Kestrel.EntityModel": "1.0.0",
@@ -346,6 +347,20 @@
           "lib/netstandard2.0/IdentityModel.dll": {}
         }
       },
+      "IdentityModel.AspNetCore.OAuth2Introspection/4.0.0": {
+        "dependencies": {
+          "IdentityModel": "4.0.0"
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/IdentityModel.AspNetCore.OAuth2Introspection.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp3.0/IdentityModel.AspNetCore.OAuth2Introspection.dll": {}
+        }
+      },
       "IdentityServer4/3.0.0": {
         "dependencies": {
           "IdentityModel": "4.0.0",
@@ -361,6 +376,21 @@
         },
         "compile": {
           "lib/netcoreapp3.0/IdentityServer4.dll": {}
+        }
+      },
+      "IdentityServer4.AccessTokenValidation/3.0.0": {
+        "dependencies": {
+          "IdentityModel.AspNetCore.OAuth2Introspection": "4.0.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "3.0.0"
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/IdentityServer4.AccessTokenValidation.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp3.0/IdentityServer4.AccessTokenValidation.dll": {}
         }
       },
       "IdentityServer4.Storage/3.0.0": {
@@ -2079,6 +2109,9 @@
         }
       },
       "Kestrel.EntityModel/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "3.0.0"
+        },
         "runtime": {
           "Kestrel.EntityModel.dll": {}
         },
@@ -3836,12 +3869,26 @@
       "path": "identitymodel/4.0.0",
       "hashPath": "identitymodel.4.0.0.nupkg.sha512"
     },
+    "IdentityModel.AspNetCore.OAuth2Introspection/4.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-DWY6sJ40w/+Gf12OzJGIdwh5WvfK8a7KLUJ9fXyquzV8rEDT5ZP+2vEJHZPAzyAZZx38LHBQZwwW4ElLcoBkSA==",
+      "path": "identitymodel.aspnetcore.oauth2introspection/4.0.0",
+      "hashPath": "identitymodel.aspnetcore.oauth2introspection.4.0.0.nupkg.sha512"
+    },
     "IdentityServer4/3.0.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-wgsOq/dKm+V6ZMF14dmOe4m7c5eGmthqv9LCK+ZTEjYbqfUa3ZuhVOybhuTlpra6ZiWIePmD2/Qf/vVQjRJwsw==",
       "path": "identityserver4/3.0.0",
       "hashPath": "identityserver4.3.0.0.nupkg.sha512"
+    },
+    "IdentityServer4.AccessTokenValidation/3.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-28O1OOHVvG6KvZDq34F8hf8JiTP1J8FIIS3Zcyc5VbVb/UimSMkfjqBJ9gCNJBjEU4SZgyQ1sSXB2Gjyl9OqKw==",
+      "path": "identityserver4.accesstokenvalidation/3.0.0",
+      "hashPath": "identityserver4.accesstokenvalidation.3.0.0.nupkg.sha512"
     },
     "IdentityServer4.Storage/3.0.0": {
       "type": "package",

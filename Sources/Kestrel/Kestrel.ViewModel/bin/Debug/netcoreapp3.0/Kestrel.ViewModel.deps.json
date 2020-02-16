@@ -888,6 +888,9 @@
         }
       },
       "Kestrel.EntityModel/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "3.0.0"
+        },
         "runtime": {
           "Kestrel.EntityModel.dll": {}
         }

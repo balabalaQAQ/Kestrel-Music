@@ -15,6 +15,21 @@
           "lib/netstandard2.0/IdentityModel.dll": {}
         }
       },
+      "IdentityModel.AspNetCore.OAuth2Introspection/4.0.0": {
+        "type": "package",
+        "dependencies": {
+          "IdentityModel": "4.0.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.0/IdentityModel.AspNetCore.OAuth2Introspection.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/IdentityModel.AspNetCore.OAuth2Introspection.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "IdentityServer4/3.0.0": {
         "type": "package",
         "dependencies": {
@@ -28,6 +43,22 @@
         },
         "runtime": {
           "lib/netcoreapp3.0/IdentityServer4.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "IdentityServer4.AccessTokenValidation/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "IdentityModel.AspNetCore.OAuth2Introspection": "4.0.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "3.0.0-preview9.19424.4"
+        },
+        "compile": {
+          "lib/netcoreapp3.0/IdentityServer4.AccessTokenValidation.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/IdentityServer4.AccessTokenValidation.dll": {}
         },
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
@@ -2352,6 +2383,9 @@
       "Kestrel.EntityModel/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "3.0.0"
+        },
         "compile": {
           "bin/placeholder/Kestrel.EntityModel.dll": {}
         },
@@ -2428,6 +2462,20 @@
         "lib/netstandard2.0/IdentityModel.xml"
       ]
     },
+    "IdentityModel.AspNetCore.OAuth2Introspection/4.0.0": {
+      "sha512": "DWY6sJ40w/+Gf12OzJGIdwh5WvfK8a7KLUJ9fXyquzV8rEDT5ZP+2vEJHZPAzyAZZx38LHBQZwwW4ElLcoBkSA==",
+      "type": "package",
+      "path": "identitymodel.aspnetcore.oauth2introspection/4.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "identitymodel.aspnetcore.oauth2introspection.4.0.0.nupkg.sha512",
+        "identitymodel.aspnetcore.oauth2introspection.nuspec",
+        "lib/netcoreapp3.0/IdentityModel.AspNetCore.OAuth2Introspection.dll",
+        "lib/netcoreapp3.0/IdentityModel.AspNetCore.OAuth2Introspection.pdb",
+        "lib/netcoreapp3.0/IdentityModel.AspNetCore.OAuth2Introspection.xml"
+      ]
+    },
     "IdentityServer4/3.0.0": {
       "sha512": "wgsOq/dKm+V6ZMF14dmOe4m7c5eGmthqv9LCK+ZTEjYbqfUa3ZuhVOybhuTlpra6ZiWIePmD2/Qf/vVQjRJwsw==",
       "type": "package",
@@ -2440,6 +2488,20 @@
         "lib/netcoreapp3.0/IdentityServer4.dll",
         "lib/netcoreapp3.0/IdentityServer4.pdb",
         "lib/netcoreapp3.0/IdentityServer4.xml"
+      ]
+    },
+    "IdentityServer4.AccessTokenValidation/3.0.0": {
+      "sha512": "28O1OOHVvG6KvZDq34F8hf8JiTP1J8FIIS3Zcyc5VbVb/UimSMkfjqBJ9gCNJBjEU4SZgyQ1sSXB2Gjyl9OqKw==",
+      "type": "package",
+      "path": "identityserver4.accesstokenvalidation/3.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "identityserver4.accesstokenvalidation.3.0.0.nupkg.sha512",
+        "identityserver4.accesstokenvalidation.nuspec",
+        "lib/netcoreapp3.0/IdentityServer4.AccessTokenValidation.dll",
+        "lib/netcoreapp3.0/IdentityServer4.AccessTokenValidation.pdb",
+        "lib/netcoreapp3.0/IdentityServer4.AccessTokenValidation.xml"
       ]
     },
     "IdentityServer4.Storage/3.0.0": {
@@ -7954,6 +8016,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.0": [
       "IdentityServer4 >= 3.0.0",
+      "IdentityServer4.AccessTokenValidation >= 3.0.0",
       "IdentityServer4.Storage >= 3.0.0",
       "Kestrel.DataAccess >= 1.0.0",
       "Kestrel.EntityModel >= 1.0.0",
@@ -8027,6 +8090,10 @@
       "netcoreapp3.0": {
         "dependencies": {
           "IdentityServer4": {
+            "target": "Package",
+            "version": "[3.0.0, )"
+          },
+          "IdentityServer4.AccessTokenValidation": {
             "target": "Package",
             "version": "[3.0.0, )"
           },

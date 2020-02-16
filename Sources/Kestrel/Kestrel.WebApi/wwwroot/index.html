@@ -9,11 +9,11 @@
     <h1>To-do 增删查改演示</h1>
     <h3>添加</h3>
     <form action="javascript:void(0);" method="POST" onsubmit="addItem()">
-        <input type="text" id="add-name" placeholder="新的 TodoItem 数据">
 
-        <input type="text" placeholder="单价" id="add-price"><br>
+
+        <input type="text" placeholder="售价" id="add-price"><br>
         <input type="text" placeholder="简介" id="add-description"><br>
-        <input type="text" placeholder="库存" id="add-stock"><br>
+        <input type="text" placeholder="歌名" id="add-name"><br>
 
 
         <input type="submit" value="添加数据">
@@ -43,12 +43,13 @@
         </tr>
         <tbody id="todos"></tbody>
     </table>
-
-    <script src="js/site.js" asp-append-version="true"></script>
-    <script type="text/javascript">
-        // 获取初始化的数据
-        getItems();
+    <script src="demo/demo.js" type="text/javascript">
+     // 获取初始化的数据
+     getItems();
     </script>
+   
+ 
+    
 </body>
-</html>
+        </html>
 

@@ -30,8 +30,7 @@ namespace Kestrel.DataAccess
     public interface IEntityRepository<T> where T : class, IEntityBase, new()
     {
         KestrelDbcontext EntitiesContext { get; }
-        UserManager<KestrelMusicUser> ApplicationUserManager { get; }
-        RoleManager<Role> ApplicationRoleManager { get; }
+      
 
         #region 1.获取指定类型实体数据对象数量的方法，2个重载
         /// <summary>
