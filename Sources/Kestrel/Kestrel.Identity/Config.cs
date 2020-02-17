@@ -44,16 +44,16 @@ namespace Kestrel.Identity
                 // blog.vue 前端vue项目
                 new Client {
                     ClientId = "blogvuejs",
-                    ClientName = "Blog.Vue JavaScript Client",
+                    ClientName = "kestrel_music",
                     AllowedGrantTypes = GrantTypes.Implicit,
                     AllowAccessTokensViaBrowser = true,
 
-                    RedirectUris =           {
-                        "http://vueblog.neters.club/callback",
-                        "http://apk.neters.club/oauth2-redirect.html"
-                    },
-                    PostLogoutRedirectUris = { "http://vueblog.neters.club" },
-                    AllowedCorsOrigins =     { "http://vueblog.neters.club" },
+                    //RedirectUris =           {
+                    //    "http://vueblog.neters.club/callback",
+                    //    "http://apk.neters.club/oauth2-redirect.html"
+                    //},
+                    //PostLogoutRedirectUris = { "http://vueblog.neters.club" },
+                    //AllowedCorsOrigins =     { "http://vueblog.neters.club" },
 
                     AllowedScopes = {
                         IdentityServerConstants.StandardScopes.OpenId,

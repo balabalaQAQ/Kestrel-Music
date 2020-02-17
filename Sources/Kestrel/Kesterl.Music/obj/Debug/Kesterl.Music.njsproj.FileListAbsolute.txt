@@ -1,1 +1,0 @@
-G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kesterl.Music\bin\Microsoft.NodejsTools.WebRole.dll

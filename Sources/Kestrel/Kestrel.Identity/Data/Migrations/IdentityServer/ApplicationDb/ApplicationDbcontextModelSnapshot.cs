@@ -115,6 +115,9 @@ namespace Kestrel.Identity.Data.Migrations.IdentityServer.ApplicationDb
                     b.Property<string>("LoginName")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("MusicUserId")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("NormalizedEmail")
                         .HasColumnType("nvarchar(256)")
                         .HasMaxLength(256);

@@ -28,6 +28,9 @@ namespace Kestrel.IdentityServer.Models
        
         public ICollection<ApplicationUserRole> UserRoles { get; set; }
 
-        public virtual KestrelMusicUser MusicUser { get; set; }
+        //所绑定的用户ID
+        public string MusicUserId { get; set; }
+
+      
     }
 }

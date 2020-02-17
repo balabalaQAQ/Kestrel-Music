@@ -15,7 +15,7 @@ namespace Kestrel.Identity
     public class DataSeed
     {
         #region 种子数据配置   EnsureSeedData(IServiceProvider serviceProvider)
-        public static void EnsureSeedData(IServiceProvider serviceProvider)
+        public static async Task EnsureSeedDataAsync(IServiceProvider serviceProvider)
         {
             using (var scope = serviceProvider.GetRequiredService<IServiceScopeFactory>().CreateScope())
             {
@@ -27,7 +27,7 @@ namespace Kestrel.Identity
                 //EnsureSeedData(context);
 
                 var context = scope.ServiceProvider.GetService<ApplicationDbcontext>();
-                context.Database.Migrate();
+              //  context.Database.Migrate();
 
                 var userMgnagger = scope.ServiceProvider.GetRequiredService<UserManager<ApplicationUser>>();
                 var roleMgnagger = scope.ServiceProvider.GetRequiredService<RoleManager<ApplicationRole>>();
@@ -41,13 +41,17 @@ namespace Kestrel.Identity
 
                 for (int i = 0; i < 3; i++)
                 {
-                    userMgnagger.CreateAsync(users[i], "123@Abc") ;
-                   // userMgnagger.AddClaimAsync(users[i], claims[i]) ;
-                    roleMgnagger.CreateAsync(roles[i]);
-                    context.UserRoles.Add(userRoles[i]);
-                  
-                };
-                context.SaveChanges();
+                 
+               
+                    await userMgnagger.CreateAsync(users[i], "123@Abc") ;
+                    // userMgnagger.AddClaimAsync(users[i], claims[i]) ;
+                    await roleMgnagger.CreateAsync(roles[i]);
+
+                      context.UserRoles.Add(userRoles[i]);
+
+                }
+            
+              context.SaveChanges();
             }
         }
 
