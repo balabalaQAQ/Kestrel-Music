@@ -60,15 +60,15 @@ namespace Kestrel.Identity
                    options.ConfigureDbContext = b => b.UseSqlServer(connectionString,
                       sql => sql.MigrationsAssembly("Kestrel.Identity"));
 
-                   options.EnableTokenCleanup = true;//自动清理token
+               //    options.EnableTokenCleanup = true;//自动清理token
                });
 
             services.AddAuthentication("Bearer")
              .AddIdentityServerAuthentication(options =>
              {
-                  options.Authority = "http://localhost:5002";//授权服务器地址
+                  options.Authority = "http://localhost:5001";//授权服务器地址
                   options.RequireHttpsMetadata = false;//是否Https
-                  options.ApiName = "blog.core.api";//我们在 Blog.Idp 中配置的资源服务器名
+                  options.ApiName = "music_api";//我们在 Blog.Idp 中配置的资源服务器名
              });
 
             services.AddAuthentication();//配置认证服务

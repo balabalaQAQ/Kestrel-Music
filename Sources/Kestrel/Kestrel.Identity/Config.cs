@@ -26,7 +26,7 @@ namespace Kestrel.Identity
         public static IEnumerable<ApiResource> GetApiResources()
         {
             return new List<ApiResource> {
-                new ApiResource("kestrelmusic API", "KestrelMusic API") {
+                new ApiResource("music_api", " Music_API") {
                     // include the following using claims in access token (in addition to subject id)
                     //requires using using IdentityModel;
                     UserClaims = { JwtClaimTypes.Name, JwtClaimTypes.Role },
@@ -43,11 +43,11 @@ namespace Kestrel.Identity
             return new List<Client> {
                 // blog.vue 前端vue项目
                 new Client {
-                    ClientId = "blogvuejs",
+                    ClientId = "music",
                     ClientName = "kestrel_music",
                     AllowedGrantTypes = GrantTypes.Implicit,
                     AllowAccessTokensViaBrowser = true,
-
+                    ClientSecrets={ new Secret("secret".Sha256())},
                     //RedirectUris =           {
                     //    "http://vueblog.neters.club/callback",
                     //    "http://apk.neters.club/oauth2-redirect.html"
@@ -59,7 +59,7 @@ namespace Kestrel.Identity
                         IdentityServerConstants.StandardScopes.OpenId,
                         IdentityServerConstants.StandardScopes.Profile,
                         "roles",
-                        "blog.core.api"
+                        "music_api"
                     }
                 },
                 // blog.admin 前端vue项目
@@ -68,7 +68,7 @@ namespace Kestrel.Identity
                     ClientName = "Blog.Admin JavaScript Client",
                     AllowedGrantTypes = GrantTypes.Implicit,
                     AllowAccessTokensViaBrowser = true,
-
+              
                     RedirectUris =
                     {
                         "http://vueadmin.neters.club/callback",

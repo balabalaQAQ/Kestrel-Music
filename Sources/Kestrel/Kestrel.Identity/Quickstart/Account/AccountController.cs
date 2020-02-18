@@ -120,7 +120,7 @@ namespace IdentityServer4.Quickstart.UI
                         return Redirect("~/");
                     }
                 }
-
+               
                 await _events.RaiseAsync(new UserLoginFailureEvent(model.Username, "invalid credentials"));
 
                 ModelState.AddModelError("", AccountOptions.InvalidCredentialsErrorMessage);

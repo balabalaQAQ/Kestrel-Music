@@ -1,5 +1,6 @@
 ﻿using IdentityModel;
 using IdentityServer4.EntityFramework.DbContexts;
+using IdentityServer4.EntityFramework.Mappers;
 using Kestrel.IdentityServer.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -20,14 +21,13 @@ namespace Kestrel.Identity
             using (var scope = serviceProvider.GetRequiredService<IServiceScopeFactory>().CreateScope())
             {
                 scope.ServiceProvider.GetRequiredService<PersistedGrantDbContext>().Database.Migrate();
+                {
 
-
-                //var context = scope.ServiceProvider.GetRequiredService<ConfigurationDbContext>();
-                //context.Database.Migrate();
-                //EnsureSeedData(context);
-
+                    var Configcontext = scope.ServiceProvider.GetRequiredService<ConfigurationDbContext>();
+                    Configcontext.Database.Migrate();
+                    EnsureSeedData(Configcontext);
+                }
                 var context = scope.ServiceProvider.GetService<ApplicationDbcontext>();
-              //  context.Database.Migrate();
 
                 var userMgnagger = scope.ServiceProvider.GetRequiredService<UserManager<ApplicationUser>>();
                 var roleMgnagger = scope.ServiceProvider.GetRequiredService<RoleManager<ApplicationRole>>();
@@ -36,22 +36,23 @@ namespace Kestrel.Identity
                 List<ApplicationRole> roles = Role();
                 List<ApplicationUser> users = User();
                 List<ApplicationUserRole> userRoles = UserRole(roles, users);
-              //List<Claim> claims = Claims(roles, users);
-              //claims.AddRange(roles.Select(s => new Claim(JwtClaimTypes.Role, s.ToString())));
+                List<Claim> claims = Claims(roles, users);
+                claims.AddRange(roles.Select(s => new Claim(JwtClaimTypes.Role, s.ToString())));
 
                 for (int i = 0; i < 3; i++)
                 {
-                 
-               
-                    await userMgnagger.CreateAsync(users[i], "123@Abc") ;
-                    // userMgnagger.AddClaimAsync(users[i], claims[i]) ;
+
+
+                    await userMgnagger.CreateAsync(users[i], "123@Abc");
+                    await userMgnagger.AddClaimAsync(users[i], claims[i]) ;
                     await roleMgnagger.CreateAsync(roles[i]);
 
-                      context.UserRoles.Add(userRoles[i]);
+                    context.UserRoles.Add(userRoles[i]);
 
                 }
-            
-              context.SaveChanges();
+      
+                context.SaveChanges();
+               
             }
         }
 
@@ -155,7 +156,50 @@ namespace Kestrel.Identity
                 },
             };
         }
-        #endregion  
+        #endregion
+        private static void EnsureSeedData(ConfigurationDbContext context)
+        {
+            if (!context.Clients.Any())
+            {
+                Console.WriteLine("Clients being populated");
+                foreach (var client in Config.GetClients().ToList())
+                {
+                    context.Clients.Add(client.ToEntity());
+                }
+                context.SaveChanges();
+            }
+            else
+            {
+                Console.WriteLine("Clients already populated");
+            }
 
+            if (!context.IdentityResources.Any())
+            {
+                Console.WriteLine("IdentityResources being populated");
+                foreach (var resource in Config.GetIdentityResources().ToList())
+                {
+                    context.IdentityResources.Add(resource.ToEntity());
+                }
+                context.SaveChanges();
+            }
+            else
+            {
+                Console.WriteLine("IdentityResources already populated");
+            }
+
+            if (!context.ApiResources.Any())
+            {
+                Console.WriteLine("ApiResources being populated");
+                foreach (var resource in Config.GetApiResources().ToList())
+                {
+                    context.ApiResources.Add(resource.ToEntity());
+                }
+                context.SaveChanges();
+            }
+            else
+            {
+                Console.WriteLine("ApiResources already populated");
+            }
+        }
     }
 }
