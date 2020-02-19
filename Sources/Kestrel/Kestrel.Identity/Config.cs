@@ -52,8 +52,8 @@ namespace Kestrel.Identity
                     //    "http://vueblog.neters.club/callback",
                     //    "http://apk.neters.club/oauth2-redirect.html"
                     //},
-                    //PostLogoutRedirectUris = { "http://vueblog.neters.club" },
-                    //AllowedCorsOrigins =     { "http://vueblog.neters.club" },
+                    PostLogoutRedirectUris = { "http://localhost:8080/" },
+                    AllowedCorsOrigins =     { "http://localhost:8080" },
 
                     AllowedScopes = {
                         IdentityServerConstants.StandardScopes.OpenId,

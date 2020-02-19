@@ -46,8 +46,11 @@ namespace Kestrel.Identity
 
 
             var builder = services.AddIdentityServer()
-               .AddAspNetIdentity<ApplicationUser>()
+                .AddInMemoryIdentityResources(Config.GetIdentityResources())
+               .AddInMemoryApiResources(Config.GetApiResources())
+               .AddInMemoryClients(Config.GetClients())
 
+               .AddAspNetIdentity<ApplicationUser>()
                //clients,resources
                .AddConfigurationStore(options =>
                {
@@ -70,7 +73,7 @@ namespace Kestrel.Identity
                   options.RequireHttpsMetadata = false;//是否Https
                   options.ApiName = "music_api";//我们在 Blog.Idp 中配置的资源服务器名
              });
-
+            builder.AddDeveloperSigningCredential();
             services.AddAuthentication();//配置认证服务
 
         }
