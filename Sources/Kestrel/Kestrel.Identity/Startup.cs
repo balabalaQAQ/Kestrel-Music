@@ -53,7 +53,7 @@ namespace Kestrel.Identity
                .AddAspNetIdentity<ApplicationUser>()
                //clients,resources
                .AddConfigurationStore(options =>
-               {
+               { 
                    options.ConfigureDbContext = b => b.UseSqlServer(connectionString,
                         sql => sql.MigrationsAssembly("Kestrel.Identity"));
                })

@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Kestrel.Identity.Data.Migrations.IdentityServer.ApplicationDb
 {
     [DbContext(typeof(ApplicationDbcontext))]
-    [Migration("20200216103339_KestrelIdentity-A")]
+    [Migration("20200223134025_KestrelIdentity-A")]
     partial class KestrelIdentityA
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

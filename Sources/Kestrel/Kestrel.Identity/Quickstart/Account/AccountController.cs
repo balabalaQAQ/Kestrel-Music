@@ -633,6 +633,18 @@ namespace IdentityServer4.Quickstart.UI
         }
 
 
+        [HttpGet("{id}")]
+        [Route("account/users")]
+        [Authorize]
+        public IActionResult Users(Guid id, string returnUrl = null)
+        {
+            ViewData["ReturnUrl"] = returnUrl;
+            var users = _userManager.Users.Where(d => !d.TdIsDelete).OrderBy(d => d.UserName).ToList();
+
+            return View(users);
+        }
+
+
 
         [HttpGet("{id}")]
         [Route("account/edit/{id}")]

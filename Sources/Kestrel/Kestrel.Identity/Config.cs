@@ -48,11 +48,10 @@ namespace Kestrel.Identity
                     AllowedGrantTypes = GrantTypes.Implicit,
                     AllowAccessTokensViaBrowser = true,
                     ClientSecrets={ new Secret("secret".Sha256())},
-                    //RedirectUris =           {
-                    //    "http://vueblog.neters.club/callback",
-                    //    "http://apk.neters.club/oauth2-redirect.html"
-                    //},
-                    PostLogoutRedirectUris = { "http://localhost:8080/" },
+                    RedirectUris =  {
+                        "http://localhost:8080/token"
+                    },
+                    PostLogoutRedirectUris = { "http://localhost:8080" },
                     AllowedCorsOrigins =     { "http://localhost:8080" },
 
                     AllowedScopes = {

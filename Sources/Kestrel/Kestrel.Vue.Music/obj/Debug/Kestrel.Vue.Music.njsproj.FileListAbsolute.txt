@@ -1,0 +1,2 @@
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel.Vue.Music\obj\Debug\Kestrel.Vue.Music.njsprojAssemblyReference.cache
+G:\程序\ASP.Net Core\Kestrel-Music\Sources\Kestrel\Kestrel.Vue.Music\bin\Microsoft.NodejsTools.WebRole.dll

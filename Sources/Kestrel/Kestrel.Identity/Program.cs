@@ -13,17 +13,19 @@ namespace Kestrel.Identity
 {
     public class Program
     {
-        public static   void Main(string[] args)
+        public static void Main(string[] args)
         {
             var host = CreateHostBuilder(args).Build();
             //种子数据
-           // DataSeed.EnsureSeedDataAsync(host.Services);
+          //  DataSeed.EnsureSeedDataAsync(host.Services);
             host.Run();
 
 
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
+
+
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {

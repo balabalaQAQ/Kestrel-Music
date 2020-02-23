@@ -27,6 +27,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Kestrel04.01实体远程数
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kestrel.ViewModel", "Kestrel.ViewModel\Kestrel.ViewModel.csproj", "{0BACE565-059E-4FF3-877A-C2CEB47C80ED}"
 EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "Kestrel.Vue.Music", "Kestrel.Vue.Music\Kestrel.Vue.Music.njsproj", "{1D110629-9E6C-47A8-8C66-4665EAB8FD6E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,6 +63,10 @@ Global
 		{0BACE565-059E-4FF3-877A-C2CEB47C80ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0BACE565-059E-4FF3-877A-C2CEB47C80ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0BACE565-059E-4FF3-877A-C2CEB47C80ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D110629-9E6C-47A8-8C66-4665EAB8FD6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D110629-9E6C-47A8-8C66-4665EAB8FD6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D110629-9E6C-47A8-8C66-4665EAB8FD6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D110629-9E6C-47A8-8C66-4665EAB8FD6E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

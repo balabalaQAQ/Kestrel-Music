@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Kestrel.Identity.Data.Migrations.IdentityServer.PersistedGrantDb
 {
     [DbContext(typeof(PersistedGrantDbContext))]
-    [Migration("20200214083850_KestrelIdentity-P")]
+    [Migration("20200223133857_KestrelIdentity-P")]
     partial class KestrelIdentityP
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
